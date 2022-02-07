@@ -1,8 +1,32 @@
 @import url(../NatSkin/BaseStyle.css);
-@import url(../WebFontsContrib/roboto/font-face.css);
+/* @import url(../WebFontsContrib/roboto/font-face.css); */
+:root {
+  --bg: #ffffff;
+  --fg: #666;
+  --fg-bold: #1a1a1a;
+  --fg-light: #8f8f8f;
+  --border: #efefef;
+  --border-bg: #f7f7f7;
+  --border2: #dfdfdf;
+  --border2-bg: #e7e7e7;
+  --accent: #537eba;
+  --accent-fg: mix(#537eba, #fff, 25%);
+  --accent-fg-bold: #fff;
+  --accent-fg-light: mix(#537eba, #fff, 40%);
+  --accent-border: rgba(255, 255, 255, 0.25);
+  --accent-border-bg: rgba(255, 255, 255, 0.075);
+  --accent-border2: rgba(255, 255, 255, 0.5);
+  --accent-border2-bg: rgba(255, 255, 255, 0.2);
+  --accent-bg-dark: #2c355d;
+  --cca: #ce3232;
+  --ccb: #81ad4a;
+  --ccm: #f6862d;
+  --ccn: #007f9d;
+  --ccq: #845b8e;
+}
 
 .natBody {
-  background:#fff;
+  background:var(--bg);
   color:#333;
   font-size:15px;
   line-height:1.7;
@@ -48,12 +72,12 @@ strong {
 }
 
 ::-moz-selection {
-  background-color: #B75150;
-  color: #fff;
+  background-color: var(--bg-dark);
+  color: var(--bg);
 }
 ::selection {
-  background-color: #B75150;
-  color: #fff;
+  background-color: var(--bg-dark);
+  color: var(--bg);
 }
 
 /* fg colors */
@@ -61,11 +85,11 @@ strong {
   color:#52af00;
 }
 .foswikiBlueFG {
-  color:#3e89d3;
+  color:var(--accent);
 }
 .foswikiAlert,
 .foswikiRedFG {
-  color:#F9542B;
+  color: var(--cca);
 }
 
 .natPanelToggle a::-moz-selection {
@@ -86,8 +110,8 @@ strong {
 .natPanelToggle a:active:hover.natWaiting,
 .natPanelToggle a.natWaiting {
   cursor: progress;
-  background-color: #B75150;
-  color: #fff;
+  background-color: var(--bg-dark);
+  color: var(--bg);
 }
 
 h1,
@@ -564,7 +588,7 @@ h2 a,
 .natTopBar .natPanelToggle.open a,
 .natTopBar a:hover {
   background-color:#3E89D3;
-  color:#fff;
+  color:var(--bg);
   text-decoration:none;
 }
 
@@ -625,7 +649,7 @@ h2 a,
 .natBanner .natBannerButtons a {
   margin-left:0.5em;
   cursor:pointer;
-  color:#fff;
+  color:var(--bg);
   text-shadow: 1px 1px rgba(0,0,0, 0.5);
 }
 .natBanner .natBannerButtons a:hover {
@@ -633,7 +657,7 @@ h2 a,
 }
 .natBannerVideo {
   padding:0;
-  background:#fff;
+  background:var(--bg);
 }
 .natBannerVideo .natBannerContents {
   position:relative;
@@ -683,17 +707,17 @@ h2 a,
 }
 .natBanner a {
   text-decoration:none;
-  color:#fff;
+  color:var(--bg);
 }
 .natBannerTitle {
-  color:#fff;
+  color:var(--bg);
   font-size:2.7em;
   line-height:1.3em;
   font-weight:500;
   text-shadow: 1px 1px rgba(0,0,0, 0.5);
 }
 .natBannerSubtitle {
-  color:#fff;
+  color:var(--bg);
   line-height:1.3em;
   font-weight:500;
   text-shadow: 1px 1px rgba(0,0,0, 0.5);
@@ -796,7 +820,7 @@ h2 a,
 .natTopicActions .natLikeAction:hover a,
 .natTopicActions .natLikeAction a:hover {
   background-color:transparent;
-  color:#fff;
+  color:var(--bg);
 }
 
 .natHistoryTopicActions a:hover,
@@ -813,7 +837,7 @@ h2 a,
 .natWebMenuContents>ul>li>li>a.current:hover,
 .natWebMenuContents>ul>li>.foswikiCurrentWebHomeLink:hover {
   background-color:#3E89D3;
-  color:#fff;
+  color:var(--bg);
 }
 
 .natHistoryTopicActions a.disabled,
@@ -830,7 +854,7 @@ h2 a,
 .natWebMenu li a:hover:active,
 .natWebMenu li a:hover:focus {
   background-color:#2472bf;
-  color:#fff;
+  color:var(--bg);
 }
 .natTopBar .natWebTitle a,
 .natTopBar .natWebTitle a:hover,
@@ -1014,7 +1038,7 @@ h2 a,
   padding:0.5em 0;
   font-size:2em;
   background:transparent;
-  color:#fff;
+  color:var(--bg);
 }
 .natTopPanel .natSearchBox .foswikiInputField::placeholder {
   color:#ddd;
@@ -1111,7 +1135,7 @@ a:hover:active,
 
 /* tabpane */
 .jqTab {
-  background:#fff;
+  background:var(--bg);
 }
 .jqTabPaneDefault .jqTab {
   border-left:0;
@@ -1134,12 +1158,12 @@ a:hover:active,
   position:relative;
   background: #ececec; 
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmRmZGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); /* IE9 */
-  background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%); 
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec)); 
-  background: -webkit-linear-gradient(top, #ffffff 0%,#ececec 100%); 
-  background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%); 
-  background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%); 
-  background: linear-gradient(top, #ffffff 0%,#ececec 100%); 
+  background: -moz-linear-gradient(top, var(--bg)fff 0%, #ececec 100%); 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,var(--bg)fff), color-stop(100%,#ececec)); 
+  background: -webkit-linear-gradient(top, var(--bg)fff 0%,#ececec 100%); 
+  background: -o-linear-gradient(top, var(--bg)fff 0%,#ececec 100%); 
+  background: -ms-linear-gradient(top, var(--bg)fff 0%,#ececec 100%); 
+  background: linear-gradient(top, var(--bg)fff 0%,#ececec 100%); 
 }
 .jqTabPaneSimple > .jqTabGroup a,
 .jqTabPanePlain > .jqTabGroup a {
@@ -1194,11 +1218,11 @@ a:hover:active,
   height:auto;
 }
 .jqTabPaneDefault > .jqTabGroup li.current {
-  background:#fff;
+  background:var(--bg);
 }
 .jqTabPaneDefault > .jqTabGroup li.current a {
-  background:#fff;
-  border-bottom:1px solid #fff;
+  background:var(--bg);
+  border-bottom:1px solid var(--bg);
 }
 .jqTabPaneDefault > .jqTabGroup li.current a:hover, 
 .jqTabPaneDefault > .jqTabGroup li.current a {
@@ -1220,15 +1244,15 @@ input[type=submit],
   font-size:14px;
   line-height:1.5;
   border-color:#bdbec5;
-  /* http://colorzilla.com/gradient-editor/#ffffff+0,ececec+100;Custom */
+  /* http://colorzilla.com/gradient-editor/var(--bg)fff+0,ececec+100;Custom */
   background: #ececec; 
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmRmZGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); /* IE9 */
-  background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%); 
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec)); 
-  background: -webkit-linear-gradient(top, #ffffff 0%,#ececec 100%); 
-  background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%); 
-  background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%); 
-  background: linear-gradient(top, #ffffff 0%,#ececec 100%); 
+  background: -moz-linear-gradient(top, var(--bg)fff 0%, #ececec 100%); 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,var(--bg)fff), color-stop(100%,#ececec)); 
+  background: -webkit-linear-gradient(top, var(--bg)fff 0%,#ececec 100%); 
+  background: -o-linear-gradient(top, var(--bg)fff 0%,#ececec 100%); 
+  background: -ms-linear-gradient(top, var(--bg)fff 0%,#ececec 100%); 
+  background: linear-gradient(top, var(--bg)fff 0%,#ececec 100%); 
   padding:0.4em 0.7em;
   -moz-border-radius: 4px; 
   -webkit-border-radius: 4px; 
@@ -1325,7 +1349,7 @@ a.jqButtonSimple:hover {
 .dataTables_paginate .ui-button.ui-state-active, 
 .dataTables_paginate .ui-button.ui-state-default:hover {
   box-shadow:none;
-  color:#fff;
+  color:var(--bg);
   background:#b22;
 }
 
@@ -1356,15 +1380,15 @@ a.jqButtonSimple:hover {
 
 /* jquery-ui */
 .ui-widget-header {
-  /* http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+100;Custom */
+  /* http://colorzilla.com/gradient-editor/var(--bg)fff+0,f3f3f3+100;Custom */
   background: #f3f3f3; 
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmRmZGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); /* IE9 */
-  background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 100%); 
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f3f3f3)); 
-  background: -webkit-linear-gradient(top, #ffffff 0%,#f3f3f3 100%); 
-  background: -o-linear-gradient(top, #ffffff 0%,#f3f3f3 100%); 
-  background: -ms-linear-gradient(top, #ffffff 0%,#f3f3f3 100%); 
-  background: linear-gradient(top, #ffffff 0%,#f3f3f3 100%); 
+  background: -moz-linear-gradient(top, var(--bg)fff 0%, #f3f3f3 100%); 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,var(--bg)fff), color-stop(100%,#f3f3f3)); 
+  background: -webkit-linear-gradient(top, var(--bg)fff 0%,#f3f3f3 100%); 
+  background: -o-linear-gradient(top, var(--bg)fff 0%,#f3f3f3 100%); 
+  background: -ms-linear-gradient(top, var(--bg)fff 0%,#f3f3f3 100%); 
+  background: linear-gradient(top, var(--bg)fff 0%,#f3f3f3 100%); 
 }
 .ui-dialog {
   border:0;
@@ -1388,7 +1412,7 @@ a.jqButtonSimple:hover {
 
 /* blockui */
 .blockMsg {
-  background:#fff;
+  background:var(--bg);
   -webkit-box-shadow:0 1px 5px 0 rgba(0,0,0,0.5);
   -moz-box-shadow:0 1px 5px 0 rgba(0,0,0,0.5);
   box-shadow:0 1px 5px 0 rgba(0,0,0,0.5);
@@ -1421,7 +1445,7 @@ a.natScrollTop {
 }
 a.natScrollTop,
 a:hover.natScrollTop {
-  background: #fff; 
+  background: var(--bg); 
 }
 
 /* pnotify */
@@ -1506,15 +1530,15 @@ table.mceLayout {
 .clsTagCloud .hilite,
 .clsTagCloud .current {
   background-color: #3E89D3 !important;
-  color:#fff !important;
+  color:var(--bg) !important;
 }
 .jqTextboxListValue {
   background-color:#f7f7f7;
   border:1px solid #cfcfcf;
   border-radius:4px;
-  -webkit-box-shadow: 0 0 2px #ffffff inset, 0 1px 0 rgba(0,0,0,0.05);
-  -moz-box-shadow   : 0 0 2px #ffffff inset, 0 1px 0 rgba(0,0,0,0.05);
-  box-shadow        : 0 0 2px #ffffff inset, 0 1px 0 rgba(0,0,0,0.05);
+  -webkit-box-shadow: 0 0 2px var(--bg)fff inset, 0 1px 0 rgba(0,0,0,0.05);
+  -moz-box-shadow   : 0 0 2px var(--bg)fff inset, 0 1px 0 rgba(0,0,0,0.05);
+  box-shadow        : 0 0 2px var(--bg)fff inset, 0 1px 0 rgba(0,0,0,0.05);
 }
 .solrHierarchyChildren a,
 .clsSubCategories a,
@@ -1603,14 +1627,14 @@ fieldset,
   border-color:#d5d6dd;
   box-shadow:0 0 10px #f4f4f4;
 
-  /* http://colorzilla.com/gradient-editor/#ffffff+0,f4f4f4+100;Custom */
+  /* http://colorzilla.com/gradient-editor/var(--bg)fff+0,f4f4f4+100;Custom */
   background: #f4f4f4; /* Old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #f4f4f4 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #ffffff 0%,#f4f4f4 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #ffffff 0%,#f4f4f4 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #ffffff 0%,#f4f4f4 100%); /* IE10+ */
-  background: linear-gradient(to bottom, #ffffff 0%,#f4f4f4 100%); /* W3C */
+  background: -moz-linear-gradient(top, var(--bg)fff 0%, #f4f4f4 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,var(--bg)fff), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, var(--bg)fff 0%,#f4f4f4 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, var(--bg)fff 0%,#f4f4f4 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, var(--bg)fff 0%,#f4f4f4 100%); /* IE10+ */
+  background: linear-gradient(to bottom, var(--bg)fff 0%,#f4f4f4 100%); /* W3C */
 }
 .cmtSubComments .cmtCommentOdd,
 .ui-dialog .foswikiFormSteps, 
@@ -1771,7 +1795,7 @@ a.jqButton.jqButtonDisabled {
 }
 .blogPrev:hover a,
 .blogNext:hover a {
-  color:#fff;
+  color:var(--bg);
 }
 
 .blogPrev:before,
@@ -1795,21 +1819,21 @@ a.jqButton.jqButtonDisabled {
 
 .blogPrev:before {
    top: 0;
-   background: linear-gradient(to left top, transparent 50%, #fff 50%);
+   background: linear-gradient(to left top, transparent 50%, var(--bg) 50%);
 }
 .blogPrev:after {
    top: 50%;
-   background: linear-gradient(to left bottom, transparent 50%, #fff 50%);
+   background: linear-gradient(to left bottom, transparent 50%, var(--bg) 50%);
 }
 
 .blogNext:before {
    top: 0;
-   background: linear-gradient(to right top, transparent 50%, #fff 50%);
+   background: linear-gradient(to right top, transparent 50%, var(--bg) 50%);
 }
 
 .blogNext:after {
    top: 50%;
-   background: linear-gradient(to right bottom, transparent 50%, #fff 50%);
+   background: linear-gradient(to right bottom, transparent 50%, var(--bg) 50%);
 }
 
 /* image plugin */
@@ -1857,7 +1881,7 @@ a.jqButton.jqButtonDisabled {
   border:0;
 }
 .natLoginBanner .natLoginHeading {
-  color: #fff;
+  color: var(--bg);
   text-shadow:0 0 1px #000;
   font-weight:normal;
 }
@@ -1951,7 +1975,7 @@ a.jqButton.jqButtonDisabled {
     overflow:auto;
     margin:0 -15px 0 0 !important;
     z-index:999;
-    background:#fff;
+    background:var(--bg);
     box-shadow:-5px 0px 5px rgba(0,0,0,0.05);
     border:1px solid #dbdbdb;
   }
