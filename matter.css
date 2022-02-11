@@ -88,11 +88,12 @@ address:first-line,dt,b,th,strong {
 }
 .natPanelToggle a:hover {
 	cursor: pointer;
+	border-bottom: none !important;
 }
 .natPanelToggle a:active,.natPanelToggle a:active:hover,.natPanelToggle a:hover.natWaiting,.natPanelToggle a:active.natWaiting,.natPanelToggle a:active:hover.natWaiting,.natPanelToggle a.natWaiting {
 	cursor: progress;
 	background-color: var(--bg-dark);
-	color: var(--bg);
+	color: var(--fg);
 }
 h1,.foswikiNormal h1 {
 	font-size: 2em;
@@ -638,7 +639,10 @@ ul,ol {
 .natHistoryTopicActions a:hover,.natHistoryTopicActions a:hover .ma,.natHistoryTopicActions a:hover .fa,.natTopicActions .natUserAction:hover,.natTopicActions .natTopicAction:hover,.natTopicActions .sfHover .natMoreActionsTopicAction,.natWebMenu li a:hover,.natWebMenu li.sfHover,.natWebMenu li.sfHover > a,.natWebMenuContents > ul > li > a:hover,.natWebMenuContents > ul > li > li > a.current,.natWebMenuContents > ul > li > li > a.current:hover,.natWebMenuContents > ul > li > .foswikiCurrentWebHomeLink:hover {
 	background-color: var(--accent);
 	color: var(--bg);
-  filter: none;
+  	filter: none;
+}
+.natWebMenu li a:hover {
+	filter: brightness(var(--hover-brightness)) !important;
 }
 .natHistoryTopicActions a.disabled,.natHistoryTopicActions a.disabled:hover .fa,.natHistoryTopicActions a.disabled:hover .ma,.natHistoryTopicActions a.disabled:hover {
 	background-color: transparent;
@@ -699,6 +703,10 @@ ul,ol {
 .natSideBar li {
 	padding: 0.4285em 0;
 	border-bottom: 1px solid var(--border);
+}
+
+.natSideBar .foswikiCurrentTopicLink {
+	color: var(--accent-bg-dark);
 }
 .natSideBar li a {
 	display: block;
@@ -834,6 +842,9 @@ ul,ol {
 /* typography */
 .natBottomBar h3,.natSideBar h2,.natSideBar h2 a {
 	color: var(--accent);
+}
+.natBottomBar h3,.natSideBar h2,.natSideBar h2 a:hover {
+	border-style: solid;
 }
 .foswikiTocTitle,h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
 	color: var(--accent);
@@ -1249,7 +1260,7 @@ fieldset,.foswikiAlt,.alt,.cmtCommentOdd,.foswikiPageForm,.foswikiFormSteps {
 pre {
 	border: 0;
 }
-.natNoteHeading,.ui-state-active a,.ui-state-active,.ui-state-active.ui-state-hover,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active,#natLoginBanner,.natSideBar .foswikiCurrentTopicLink,.natSideBar .foswikiCurrentTopicLink .foswikiGrayText,.foswikiAlt h2,.alt h2,h2.marked,.jqTabContents h2,.jqTabContents h2 a,.foswikiPageForm h2,.foswikiPageForm h2 a,.foswikiFormSteps h2,.foswikiFormSteps h2 a {
+.natNoteHeading,.ui-state-active a,.ui-state-active,.ui-state-active.ui-state-hover,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active,#natLoginBanner,.natSideBar .foswikiCurrentTopicLink .foswikiGrayText,.foswikiAlt h2,.alt h2,h2.marked,.jqTabContents h2,.jqTabContents h2 a,.foswikiPageForm h2,.foswikiPageForm h2 a,.foswikiFormSteps h2,.foswikiFormSteps h2 a {
 	color: var(--bg);
 	font-weight: 500;
 }
