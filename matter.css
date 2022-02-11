@@ -202,7 +202,6 @@ ul,ol {
 }
 .foswikiEmulatedLink,.wysiwyg_link,a {
 	color: var(--accent);
-	border-bottom: dotted 1px;
 	text-decoration: none;
 }
 /* custom underline ---.foswikiEmulatedLink,.wysiwyg_link,a {
@@ -638,6 +637,7 @@ ul,ol {
 .natHistoryTopicActions a:hover,.natHistoryTopicActions a:hover .ma,.natHistoryTopicActions a:hover .fa,.natTopicActions .natUserAction:hover,.natTopicActions .natTopicAction:hover,.natTopicActions .sfHover .natMoreActionsTopicAction,.natWebMenu li a:hover,.natWebMenu li.sfHover,.natWebMenu li.sfHover > a,.natWebMenuContents > ul > li > a:hover,.natWebMenuContents > ul > li > li > a.current,.natWebMenuContents > ul > li > li > a.current:hover,.natWebMenuContents > ul > li > .foswikiCurrentWebHomeLink:hover {
 	background-color: var(--accent);
 	color: var(--bg);
+  filter: none;
 }
 .natHistoryTopicActions a.disabled,.natHistoryTopicActions a.disabled:hover .fa,.natHistoryTopicActions a.disabled:hover .ma,.natHistoryTopicActions a.disabled:hover {
 	background-color: transparent;
@@ -702,6 +702,11 @@ ul,ol {
 .natSideBar li a {
 	display: block;
 	background-color: transparent;
+	text-decoration: none !important;
+}
+.natSideBar li a:hover {
+	text-decoration: none !important;
+	border-bottom: none !important;
 }
 .natSolrBody .natSideBar li {
 	padding: 0.1em 0;
@@ -827,7 +832,6 @@ ul,ol {
 }
 /* typography */
 .natBottomBar h3,.natSideBar h2,.natSideBar h2 a {
-	color: #52af00;
 	color: var(--accent);
 }
 .foswikiTocTitle,h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
@@ -840,6 +844,7 @@ ul,ol {
 a:hover,a:hover .foswikiGrayText,a.ui-state-active:hover,.foswikiPageForm h2 a:hover,.foswikiFormSteps h2 a:hover,.foswikiGrayText a:hover,.foswikiTopicInfo a:hover,.hover,.hover a,.hover a:hover,.natBottomBarContents a:hover,.natBottomBarContents .jqButton:hover,.natBreadCrumbs a:hover,.natSideBar li a:hover,.natTopPanelContents a:hover,.ui-jqgrid .ui-state-hover a:hover,.ui-state-active a:hover,.ui-state-active.ui-state-hover {
 	background-color: transparent;
   filter: brightness(var(--hover-brightness));
+  border-bottom: dotted 1px;
 }
 a:hover.ecpEdit,.redDot a:hover {
   color: var(--accent);
@@ -946,8 +951,7 @@ input[type="button"],input[type="submit"],.foswikiSubmit,.foswikiButton,.ui-butt
 	/* http://colorzilla.com/gradient-editor/var(--bg)fff+0,ececec+100;
 	Custom */
 	background: #ececec;
-	background: url(data:image/svg+xml;
-	base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmRmZGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmRmZGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 	/* IE9 */
 	background: -moz-linear-gradient(top, var(--bg) fff 0%, #ececec 100%);
 	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%, var(--bg) fff),color-stop(100%, #ececec));
@@ -1017,7 +1021,7 @@ span.jqButtonSimple:hover,a.jqButtonSimple:hover {
 }
 /* icon colors */
 .jqButton .ma,.jqButton .fa,.jqButton .ma,.jqButton .fa,.jqButtonIcon .ma,.jqButtonIcon.fa {
-	color: #2375c5;
+	color: var(--accent);;
 }
 .jqButtonHover .ma,.jqButtonHover .fa {
 	color: var(--accent);
