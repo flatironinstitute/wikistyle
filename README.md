@@ -7,7 +7,7 @@ Custom stylesheets for the foswiki FI implementation.
 - Logo size
 - TL;DR http://foswiki/SCC/Software/Slurm
 - Ul / li style
-- Search bar funkiness
+- Search bar funkiness http://foswiki/Main/WebHome (edit inline)
 - Color styling on internal notification boxes
 - Style Table of contents
 
