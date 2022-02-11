@@ -11,8 +11,8 @@ Custom stylesheets for the foswiki FI implementation.
 - Ul / li style
 - Search bar funkiness
 - Color styling on internal notification boxes
-- Remove writer name 
 - Style Table of contents
 
 ## Done
 - Underline doubles
+- Remove writer name 
