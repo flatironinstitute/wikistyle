@@ -11,6 +11,7 @@ Custom stylesheets for the foswiki FI implementation.
 - Color styling on internal notification boxes
 - Style Table of contents
 - Private webs per center: where do they live? (aka subwebs of center? Or somewhere else? Where are the links to them? etc)
+- Subwebs "expand" button on Web landing pages: more... is kind of hidden: replaced by an icon?
 
 ## Done
 - Underline doubles
