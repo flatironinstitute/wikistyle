@@ -4,7 +4,7 @@ Custom stylesheets for the foswiki FI implementation.
 ## TODO
 - Set web BG color for each cluster
 - Button alignment
-- Logo size
+
 - TL;DR http://foswiki/SCC/Software/Slurm so far a class for div named 'fiCheatsheetMessage'
 - Ul / li style
 - Search bar funkiness http://foswiki/Main/WebHome (edit inline)
@@ -19,4 +19,5 @@ Custom stylesheets for the foswiki FI implementation.
 - Underline doubles
 - Footer freeze
 - Hover brightness on search tab
-- Remove writer name
+- Remove writer names
+- Logo size
