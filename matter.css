@@ -1461,6 +1461,7 @@ a.jqButton.jqButtonDisabled {
 /* Syntax Highlighting */
 pre.syntaxHighlightingPlugin {
 	background: #002b36;
+	color: #eee8d5;
 }
 @media screen and (max-width: 1260px) {
 	.natBody .natTopBarContents {
