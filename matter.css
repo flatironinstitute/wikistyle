@@ -1139,12 +1139,6 @@ a.natScrollTop,a:hover.natScrollTop {
 .foswikiSuccessMessage,.foswikiErrorMessage,.foswikiWarningMessage,.foswikiInfoMessage,.foswikiTipMessage {
 	background-position: 1em 1em;
 }
-.foswikiInfoMessage, .foswikiTipMessage {
-	background-image: url(../FamFamFamSilkIcons/lightbulb.png);
-    background-color: var(--accent-fg-light);
-    border-color: var(--accent-border);
-    color: var(--accent-border2-bg);
-}
 /* tables */
 table.mceLayout {
 	table-layout: fixed;
@@ -1463,6 +1457,7 @@ pre.syntaxHighlightingPlugin {
 	background: #002b36;
 	color: #eee8d5;
 }
+/* Media Queries */
 @media screen and (max-width: 1260px) {
 	.natBody .natTopBarContents {
 		width: auto;

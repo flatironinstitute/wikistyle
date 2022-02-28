@@ -22,6 +22,23 @@
     --greenDSol: #859900;
 }
 
+.wbos-colors {
+	--wbblue: #193549; 
+	--wbbluehighlight: #1F4662; 
+	--wbbluehighlight2: #234E6D; 
+	--wbbluedark: #122738;
+	--wbyellow: #ffc600; 
+	--wbhotpink: #ff0088; 
+	--wbblushpink: #fb94ff; 
+	--wborange: #ff9d00; 
+	--wbgreen: #3ad900;
+	--wbcyan:#9effff;
+	--wbviolet: #8a92ff;
+	--wbluebright: #0088ff;
+	--wbred: #f44542;
+	--wbbloodorange: #f54b05;
+}
+
 /* Set colors. */
 face_bold[fg_color] =           language_color("base3");
 face_italic[fg_color] =         language_color("base3");
@@ -59,5 +76,5 @@ face_highlight[bg_color] =      language_color("base02");
 	--ccb: #81ad4a;
 	--ccm: #f6862d;
 	--ccn: #007f9d;
-	--ccq: #845b8e;
+	--ccq: #845b8e; 
 }
