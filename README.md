@@ -2,7 +2,8 @@
 Custom stylesheets for the foswiki FI implementation. 
 
 ## TODO
-- Set web BG color for each cluster
+- Set web BG color for each center
+- Need a clean template for user profiles. So far it would look like this: https://wiki.flatironinstitute.org/Main/FoswikiTest
 - Button alignment
 - TL;DR http://foswiki/SCC/Software/Slurm so far a class for div named 'fiCheatsheetMessage'
 - Ul / li style
