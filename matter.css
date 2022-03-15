@@ -1229,6 +1229,7 @@ hr {
 .natSideBar h2,
 .natSideBar h2 a:hover {
 	border-style: solid;
+	border-color: var(--border);
 }
 
 .foswikiTocTitle,
@@ -2266,6 +2267,30 @@ pre.syntaxHighlightingPlugin {
 .natSearchForm {
 	display: grid;
 	grid-template-columns: 1fr 2rem;
+}
+
+.twistyTrigger > a:hover {
+	border-bottom: none;
+}
+
+.Centers\/CCA {
+	border-bottom: solid 3.5px var(--cca);
+}
+
+.Centers\/CCB {
+	border-bottom: solid 3.5px var(--ccb);
+}
+
+.Centers\/CCM {
+	border-bottom: solid 3.5px var(--ccm);
+}
+
+.Centers\/CCN {
+	border-bottom: solid 3.5px var(--ccn);
+}
+
+.Centers\/CCQ {
+	border-bottom: solid 3.5px var(--ccq);
 }
 
 
