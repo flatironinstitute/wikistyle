@@ -9,7 +9,6 @@ Custom stylesheets for the foswiki FI implementation.
 - Ul / li style
 - Color styling on internal notification boxes
 - Style Table of contents
-- Width of the actual content is a bit limited compared to previous version, this leads to more scrolling for pre elements. eg: modules page
 - Private webs per center: where do they live? (aka subwebs of center? Or somewhere else? Where are the links to them? etc)
 - How to have important messages on the main landing page (eg: "MPI is broken...")
 
@@ -23,7 +22,10 @@ Custom stylesheets for the foswiki FI implementation.
 - =text= is used to provide <code>text</code> Can we CSS it so that it does not break and is always on a single line?
 - Subwebs "expand" button on Web landing pages: more... is kind of hidden: replace by an icon?
 - Set web BG color for each center
-
+- Width of the actual content is a bit limited compared to previous version, this leads to more scrolling for pre elements. eg: modules page
 
 ## What Am I?
 - Button alignment
+
+## Punt? 
+- Need a clean template for user profiles. So far it would look like this: https://wiki.flatironinstitute.org/Main/FoswikiTest (Auto set the names to have a space?)
