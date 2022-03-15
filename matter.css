@@ -222,6 +222,12 @@ ul,ol {
 }
 */
 /* borders */
+.natTopicAction {
+	color: var(--accent);	
+}
+.natTopicAction:hover {
+	color: var(--bg);
+}
 .foswikiMetaData .jqTab,.foswikiDataForm .foswikiLayoutTable,.foswikiDataForm .foswikiLayoutTable td,.foswikiGrid .border,.hr,hr {
 	border-style: solid;
 	border-color: var(--border);
@@ -633,7 +639,7 @@ ul,ol {
 	background-color: transparent;
 	color: var(--fg);
 }
-.natTopicActions .natLikeAction,.natTopicActions .natLikeAction:hover a,.natTopicActions .natLikeAction a:hover {
+.natTopicActions .natLikeAction,.natTopicActions .natLikeAction:hover a,.natTopicActions .natLikeAction a:hover{
 	background-color: transparent;
 	color: var(--bg);
 }
