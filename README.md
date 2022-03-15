@@ -1,8 +1,10 @@
 # wikistyle
 Custom stylesheets for the foswiki FI implementation. 
 
+`[wikiadmin@foswiki templates]$ vim topbar.matter.nat.tmpl`
+
 ## TODO
-- Button alignment
+- (Auto set the names to have a space?)
 - TL;DR https://wiki.flatironinstitute.org/SCC/Software/Slurm so far a class for div named 'fiCheatsheetMessage'
 - Ul / li style
 - Color styling on internal notification boxes
@@ -23,5 +25,5 @@ Custom stylesheets for the foswiki FI implementation.
 - Set web BG color for each center
 
 
-## Punt? 
-- Need a clean template for user profiles. So far it would look like this: https://wiki.flatironinstitute.org/Main/FoswikiTest (Auto set the names to have a space?)
+## What Am I?
+- Button alignment
