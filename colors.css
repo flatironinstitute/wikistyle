@@ -1,0 +1,63 @@
+/* Highlight colors 
+    based on Solarized Dark
+    https://github.com/altercation/solarized
+*/
+
+:root {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+    --yellowDSol: #b58900;
+    --orangeDSol: #cb4b16;
+    --redDSol: #dc322f;
+    --magentaDSol: #d33682;
+    --violetDSol: #6c71c4;
+    --blueDSol: #268bd2;
+    --cyanDSol: #2aa198;
+    --greenDSol: #859900;
+}
+
+/* Set colors. */
+face_bold[fg_color] =           language_color("base3");
+face_italic[fg_color] =         language_color("base3");
+face_bold_italic[fg_color] =    language_color("base3");
+face_comment[fg_color] =        language_color("base01");
+face_function_name[fg_color] =  language_color("blueDSol");
+face_variable_name[fg_color] =  language_color("orangeDSol");
+face_keyword[fg_color] =        language_color("greenDSol");
+face_reference[fg_color] =      language_color("magentaDSol");
+face_string[fg_color] =         language_color("cyanDSol");
+face_builtin[fg_color] =        language_color("violetDSol");
+face_type[fg_color] =           language_color("yellowDSol");
+face_highlight[bg_color] =      language_color("base02");
+
+ /* FI Brand Colors */
+:root {
+	--bg: #ffffff;
+	--fg: #666;
+	--fg-bold: #1a1a1a;
+	--fg-light: #8f8f8f;
+	--border: #efefef;
+	--border-bg: #f7f7f7;
+	--border2: #dfdfdf;
+	--border2-bg: #e7e7e7;
+	--accent: #537eba;
+	--accent-fg: #d4dfee;
+	--accent-fg-bold: #fff;
+	--accent-fg-light: #bacbe3;
+	--accent-border: rgba(255, 255, 255, 0.25);
+	--accent-border-bg: rgba(255, 255, 255, 0.075);
+	--accent-border2: rgba(255, 255, 255, 0.5);
+	--accent-border2-bg: rgba(255, 255, 255, 0.2);
+	--accent-bg-dark: #2c355d;
+	--cca: #ce3232;
+	--ccb: #81ad4a;
+	--ccm: #f6862d;
+	--ccn: #007f9d;
+	--ccq: #845b8e;
+}

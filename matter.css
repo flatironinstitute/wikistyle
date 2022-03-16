@@ -14,20 +14,20 @@
 	--border2: #dfdfdf;
 	--border2-bg: #e7e7e7;
 	--accent: #537eba;
-	--accent-fg: mix(#537eba, #fff, 25%);
+	--accent-fg: #d4dfee;
 	--accent-fg-bold: #fff;
-	--accent-fg-light: mix(#537eba, #fff, 40%);
+	--accent-fg-light: #bacbe3;
 	--accent-border: rgba(255, 255, 255, 0.25);
 	--accent-border-bg: rgba(255, 255, 255, 0.075);
 	--accent-border2: rgba(255, 255, 255, 0.5);
 	--accent-border2-bg: rgba(255, 255, 255, 0.2);
 	--accent-bg-dark: #2c355d;
-  --hover-brightness: 1.2;
 	--cca: #ce3232;
 	--ccb: #81ad4a;
 	--ccm: #f6862d;
 	--ccn: #007f9d;
 	--ccq: #845b8e;
+	--hover-brightness: 1.2;
 }
 .natBody {
 	background: var(--bg);
@@ -36,9 +36,10 @@
 	line-height: 1.7;
 	font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
 }
-.foswikiNewLink {
+/* TODO Swap */
+/* .foswikiNewLink {
 	background: ;
-}
+} */
 /* typo? */
 .foswikiNormal {
 	font-size: 15px;
@@ -1138,6 +1139,12 @@ a.natScrollTop,a:hover.natScrollTop {
 .foswikiSuccessMessage,.foswikiErrorMessage,.foswikiWarningMessage,.foswikiInfoMessage,.foswikiTipMessage {
 	background-position: 1em 1em;
 }
+.foswikiInfoMessage, .foswikiTipMessage {
+	background-image: url(../FamFamFamSilkIcons/lightbulb.png);
+    background-color: var(--accent-fg-light);
+    border-color: var(--accent-border);
+    color: var(--accent-border2-bg);
+}
 /* tables */
 table.mceLayout {
 	table-layout: fixed;
@@ -1450,6 +1457,11 @@ a.jqButton.jqButtonDisabled {
 }
 .natLoginBanner .natContact {
 	display: none;
+}
+/* Syntax Highlighting */
+pre.syntaxHighlightingPlugin {
+	background: #002b36;
+	color: #eee8d5;
 }
 @media screen and (max-width: 1260px) {
 	.natBody .natTopBarContents {
