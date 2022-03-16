@@ -1,9 +1,11 @@
 @import url(../NatSkin/BaseStyle.css);
+
 /*
   Flatiron Foswiki Matter Template 
   Flatiron Institute
   flatironinstitute.org
 */
+
 :root {
 	--bg: #ffffff;
 	--fg: #666;
@@ -29,74 +31,116 @@
 	--ccq: #845b8e;
 	--hover-brightness: 1.2;
 }
+
 .natBody {
 	background: var(--bg);
 	color: #333;
 	font-size: 15px;
 	line-height: 1.7;
-	font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+	font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
 }
+
+
 /* TODO Swap */
+
+
 /* .foswikiNewLink {
 	background: ;
 } */
+
+
 /* typo? */
+
 .foswikiNormal {
 	font-size: 15px;
 	line-height: 1.7;
 }
-.jqTextboxListValue,label,.ui-menu,.natWebMenu ul ul li,.natTopicActions,.ui-natedit-toolbar,.jqTabGroup,.jqButton {
+
+.jqTextboxListValue,
+label,
+.ui-menu,
+.natWebMenu ul ul li,
+.natTopicActions,
+.ui-natedit-toolbar,
+.jqTabGroup,
+.jqButton {
 	font-family: Arial, "Liberation Sans", FreeSans, sans-serif;
 }
+
 .natBody .natEditBottomBar li {
 	font-size: inherit;
 }
+
 .natEditBottomBar ul {
 	overflow: visible;
 }
+
 p {
 	line-height: 1.5;
 	margin: 1.5em 0;
 }
+
 em {
 	font-style: italic;
 }
-address:first-line,dt,b,th,strong {
+
+address:first-line,
+dt,
+b,
+th,
+strong {
 	font-weight: 600;
 }
+
 ::-moz-selection {
 	background-color: var(--accent-bg-dark);
 	color: var(--bg);
 }
+
 ::selection {
 	background-color: var(--accent-bg-dark);
 	color: var(--bg);
 }
+
 .foswikiGreenFG {
 	color: var(--ccb);
 }
+
 .foswikiBlueFG {
 	color: var(--accent);
 }
-.foswikiAlert,.foswikiRedFG {
+
+.foswikiAlert,
+.foswikiRedFG {
 	color: var(--cca);
 }
+
 .natPanelToggle a::-moz-selection {
 	background-color: transparent;
 }
+
 .natPanelToggle a::selection {
 	background-color: transparent;
 }
+
 .natPanelToggle a:hover {
 	cursor: pointer;
 	border-bottom: none !important;
 }
-.natPanelToggle a:active,.natPanelToggle a:active:hover,.natPanelToggle a:hover.natWaiting,.natPanelToggle a:active.natWaiting,.natPanelToggle a:active:hover.natWaiting,.natPanelToggle a.natWaiting {
+
+.natPanelToggle a:active,
+.natPanelToggle a:active:hover,
+.natPanelToggle a:hover.natWaiting,
+.natPanelToggle a:active.natWaiting,
+.natPanelToggle a:active:hover.natWaiting,
+.natPanelToggle a.natWaiting {
 	cursor: progress;
 	background-color: var(--bg-dark);
 	color: var(--fg);
 }
-h1,.foswikiNormal h1 {
+
+h1,
+.foswikiNormal h1 {
 	font-size: 2em;
 	/* 30px */
 	line-height: 1.25;
@@ -105,72 +149,119 @@ h1,.foswikiNormal h1 {
 	border-bottom: 1px solid var(--border);
 	font-weight: normal;
 }
-.foswikiMetaData h1,.foswikiMetaData h1 a,#solrSearch > h1,#solrSearch > h1 a,.foswikiTopicInfo h1,.foswikiTopicInfo h1 a,.foswikiProfileInfo h1,.foswikiProfileInfo h1 a,.natMainContents > h1:first-child,.natMainContents > h1:first-child a {
+
+.foswikiMetaData h1,
+.foswikiMetaData h1 a,
+#solrSearch>h1,
+#solrSearch>h1 a,
+.foswikiTopicInfo h1,
+.foswikiTopicInfo h1 a,
+.foswikiProfileInfo h1,
+.foswikiProfileInfo h1 a,
+.natMainContents>h1:first-child,
+.natMainContents>h1:first-child a {
 	color: #303030;
 }
-.foswikiMetaData h1,#solrSearch > h1,.foswikiTopicInfo h1,.foswikiProfileInfo h1,.natMainContents > h1:first-child {
+
+.foswikiMetaData h1,
+#solrSearch>h1,
+.foswikiTopicInfo h1,
+.foswikiProfileInfo h1,
+.natMainContents>h1:first-child {
 	margin-top: 0;
 	margin-bottom: 0.3em;
 }
+
 h1 .foswikiTopicSummary {
 	font-size: 0.5em;
 	line-height: 1.5;
 }
-.foswikiInfo,.foswikiRevision {
+
+.foswikiInfo,
+.foswikiRevision {
 	margin-bottom: 1.5em;
 }
-.solrSearchHits h3,.natEditTitle {
+
+.solrSearchHits h3,
+.natEditTitle {
 	font-family: inherit;
 }
+
 h1.natEditTitle {
 	margin-bottom: 0.5em !important;
 }
-.blogCategoryTitle h1,.blogCategoryTitle h1 a {
+
+.blogCategoryTitle h1,
+.blogCategoryTitle h1 a {
 	border-bottom: 0px;
 	color: var(--fg);
 }
-h2,.foswikiNormal h2 {
+
+h2,
+.foswikiNormal h2 {
 	font-size: 1.4em;
 	line-height: 1.5;
 	margin: 2em 0 1em;
 	border-bottom: 1px solid var(--border);
 	font-weight: normal;
 }
+
 .foswikiGrid h2 {
 	border-bottom: 0;
 }
-.foswikiPageForm h2,.foswikiFormSteps h2,.foswikiAlt h2,.alt h2 {
+
+.foswikiPageForm h2,
+.foswikiFormSteps h2,
+.foswikiAlt h2,
+.alt h2 {
 	font-size: 1.2em;
 	line-height: 1.5;
 }
-h3,.foswikiNormal h3 {
+
+h3,
+.foswikiNormal h3 {
 	font-size: 1.2em;
 	line-height: 1.5;
 	margin: 2.3333em 0 1.1667em;
 	font-weight: normal;
 }
-h4,.foswikiNormal h4 {
+
+h4,
+.foswikiNormal h4 {
 	font-size: 1.1067em;
 	line-height: 1.5;
 	margin: 1.3125em 0;
 	font-weight: normal;
 }
-h5,.foswikiNormal h5 {
+
+h5,
+.foswikiNormal h5 {
 	font-size: 1em;
 	line-height: 1.5;
 	margin-top: 1.4em;
 	margin-bottom: 0em;
 	font-weight: normal;
 }
-h6,.foswikiNormal h6 {
+
+h6,
+.foswikiNormal h6 {
 	font-size: 1em;
 	line-height: 1.5;
 	margin-top: 1.5em;
 	margin-bottom: 0;
 	font-weight: normal;
 }
+
+
 /* fix fixed header covering the header during an anchor navigation */
-.natViewBody .natMainContents h1[id]:before,.natViewBody .natMainContents h2[id]:before,.natViewBody .natMainContents h3[id]:before,.natViewBody .natMainContents h4[id]:before,.natViewBody .natMainContents h5[id]:before,.natViewBody .natMainContents h6[id]:before,.natSolrBody .natMainContents .solrSearchHits:before {
+
+.natViewBody .natMainContents h1[id]:before,
+.natViewBody .natMainContents h2[id]:before,
+.natViewBody .natMainContents h3[id]:before,
+.natViewBody .natMainContents h4[id]:before,
+.natViewBody .natMainContents h5[id]:before,
+.natViewBody .natMainContents h6[id]:before,
+.natSolrBody .natMainContents .solrSearchHits:before {
 	display: block;
 	content: " ";
 	margin-top: -80px;
@@ -179,33 +270,59 @@ h6,.foswikiNormal h6 {
 	position: relative;
 	width: 0;
 }
+
 .natSolrBody .natMainContents .solrSearchHits:before {
 	margin-top: -120px;
 	height: 120px;
 }
-.natViewBody .natMainContents .fltMakeIndexWrapper h1[id]:before,.natViewBody .natMainContents .fltMakeIndexWrapper h2[id]:before,.natViewBody .natMainContents .fltMakeIndexWrapper h3[id]:before,.natViewBody .natMainContents .fltMakeIndexWrapper h4[id]:before,.natViewBody .natMainContents .fltMakeIndexWrapper h5[id]:before,.natViewBody .natMainContents .fltMakeIndexWrapper h6[id]:before,.natViewBody .natMainContents .foswikiGrid h1[id]:before,.natViewBody .natMainContents .foswikiGrid h2[id]:before,.natViewBody .natMainContents .foswikiGrid h3[id]:before,.natViewBody .natMainContents .foswikiGrid h4[id]:before,.natViewBody .natMainContents .foswikiGrid h5[id]:before,.natViewBody .natMainContents .foswikiGrid h6[id]:before {
+
+.natViewBody .natMainContents .fltMakeIndexWrapper h1[id]:before,
+.natViewBody .natMainContents .fltMakeIndexWrapper h2[id]:before,
+.natViewBody .natMainContents .fltMakeIndexWrapper h3[id]:before,
+.natViewBody .natMainContents .fltMakeIndexWrapper h4[id]:before,
+.natViewBody .natMainContents .fltMakeIndexWrapper h5[id]:before,
+.natViewBody .natMainContents .fltMakeIndexWrapper h6[id]:before,
+.natViewBody .natMainContents .foswikiGrid h1[id]:before,
+.natViewBody .natMainContents .foswikiGrid h2[id]:before,
+.natViewBody .natMainContents .foswikiGrid h3[id]:before,
+.natViewBody .natMainContents .foswikiGrid h4[id]:before,
+.natViewBody .natMainContents .foswikiGrid h5[id]:before,
+.natViewBody .natMainContents .foswikiGrid h6[id]:before {
 	display: none;
 }
+
 blockquote {
 	margin: 1.5em 0;
 	padding: 0 0 0 1.4285em;
 }
-ul,ol {
+
+ul,
+ol {
 	margin: 1.5em 0;
 }
-.foswikiHelp,.foswikiAlt {
+
+.foswikiHelp,
+.foswikiAlt {
 	padding: 0.678em 1em;
 }
-.foswikiTopicInfo h1 a,.foswikiTopicInfo h2 a {
+
+.foswikiTopicInfo h1 a,
+.foswikiTopicInfo h2 a {
 	color: inherit;
 }
+
 .foswikiTopicInfo .fa {
 	vertical-align: baseline;
 }
-.foswikiEmulatedLink,.wysiwyg_link,a {
+
+.foswikiEmulatedLink,
+.wysiwyg_link,
+a {
 	color: var(--accent);
 	text-decoration: none;
 }
+
+
 /* custom underline ---.foswikiEmulatedLink,.wysiwyg_link,a {
 	color:#333;
 	text-decoration:none;
@@ -221,129 +338,204 @@ ul,ol {
 	background-image:none;
 }
 */
+
+
 /* borders */
-.foswikiMetaData .jqTab,.foswikiDataForm .foswikiLayoutTable,.foswikiDataForm .foswikiLayoutTable td,.foswikiGrid .border,.hr,hr {
+
+.natTopicAction {
+	color: var(--accent);
+}
+
+.natTopicAction:hover {
+	color: var(--bg);
+}
+
+.foswikiMetaData .jqTab,
+.foswikiDataForm .foswikiLayoutTable,
+.foswikiDataForm .foswikiLayoutTable td,
+.foswikiGrid .border,
+.hr,
+hr {
 	border-style: solid;
 	border-color: var(--border);
 }
-.foswikiGrid > .foswikiRow > .foswikiBorder {
+
+.foswikiGrid>.foswikiRow>.foswikiBorder {
 	border-color: var(--border);
 }
+
 .foswikiDataForm .foswikiLayoutTable {
 	border: 0;
 }
-.foswikiDataForm .foswikiLayoutTable td,.foswikiDataForm .foswikiLayoutTable th {
+
+.foswikiDataForm .foswikiLayoutTable td,
+.foswikiDataForm .foswikiLayoutTable th {
 	padding: 0.15em 1em 0.15em 0;
 }
-.foswikiMetaData .jqTabPanePlain .foswikiFormSteps,.foswikiMetaData .jqTabPanePlain .foswikiPageForm {
+
+.foswikiMetaData .jqTabPanePlain .foswikiFormSteps,
+.foswikiMetaData .jqTabPanePlain .foswikiPageForm {
 	padding-left: 1em;
 	padding-right: 0;
 }
-.foswikiDataForm .foswikiLayoutTable th,.foswikiDataForm .foswikiLayoutTable td {
+
+.foswikiDataForm .foswikiLayoutTable th,
+.foswikiDataForm .foswikiLayoutTable td {
 	border: 0;
 }
-.foswikiGrid h3,.foswikiGrid h2 {
+
+.foswikiGrid h3,
+.foswikiGrid h2 {
 	margin-top: 0;
 }
+
 .foswikiAttachmentContainer {
 	padding-left: 0;
 	padding-right: 0;
 }
+
 .natSideBarContents {
 	margin-top: -1em;
 }
+
 .natBodyRight .natSideBarContents {
 	border-left: 1px solid var(--border);
 	padding: 1em 1px 0 1.5em;
 }
+
 .natBodyLeft .natSideBarContents {
 	border-right: 1px solid var(--border);
 	padding: 1em 1em 0 1px;
 }
+
 .natBodyBoth .natSideBarContents {
 	padding: 1em 0 0 0;
 }
-.natMainHeaderContents,.natMainFooterContents {
+
+.natMainHeaderContents,
+.natMainFooterContents {
 	padding: 0;
 }
+
 .natMiddleContents {
 	background: transparent;
 }
-.natBodyBoth .natMainHeaderContents,.natBodyBoth .natMainFooterContents,.natBodyBoth .natMainContents,.natBodyRight .natMainHeaderContents,.natBodyRight .natMainFooterContents,.natBodyRight .natMainContents {
+
+.natBodyBoth .natMainHeaderContents,
+.natBodyBoth .natMainFooterContents,
+.natBodyBoth .natMainContents,
+.natBodyRight .natMainHeaderContents,
+.natBodyRight .natMainFooterContents,
+.natBodyRight .natMainContents {
 	margin-right: 1.5em;
 }
-.natBodyBoth .natMainHeaderContents,.natBodyBoth .natMainFooterContents,.natBodyBoth .natMainContents,.natBodyLeft .natMainHeaderContents,.natBodyLeft .natMainFooterContents,.natBodyLeft .natMainContents {
+
+.natBodyBoth .natMainHeaderContents,
+.natBodyBoth .natMainFooterContents,
+.natBodyBoth .natMainContents,
+.natBodyLeft .natMainHeaderContents,
+.natBodyLeft .natMainFooterContents,
+.natBodyLeft .natMainContents {
 	margin-left: 1.5em;
 }
-.natPrintBody .natMainHeaderContents,.natPrintBody .natMainFooterContents,.natPrintBody .natMainContents {
+
+.natPrintBody .natMainHeaderContents,
+.natPrintBody .natMainFooterContents,
+.natPrintBody .natMainContents {
 	margin: 0;
 }
+
 .natMainContents {
 	margin-top: 1.5em;
 	padding: 0 0 1em;
 }
-.natMainHeaderContents,.natMainFooterContents {
+
+.natMainHeaderContents,
+.natMainFooterContents {
 	padding: 0;
 }
+
 .natBody .natSideBarContents {
 	margin-top: -1.5em;
 	padding-top: 1.5em;
 }
+
 .natBody .natBodyContents {
 	margin: 0;
 	padding: 0;
 }
+
 .natBodyFixed .natBodyContents {
 	width: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .natBody .natBodyContents {
 	margin-top: 0;
 }
-.natBodyFixed .natBannerContents,.natBodyFixed .natTopPanelContents,.natBodyFixed .natTopBarContents,.natBodyFixed .natMiddle,.natBodyFixed .natBottomBarContents {
+
+.natBodyFixed .natBannerContents,
+.natBodyFixed .natTopPanelContents,
+.natBodyFixed .natTopBarContents,
+.natBodyFixed .natMiddle,
+.natBodyFixed .natBottomBarContents {
 	width: 80em;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .natMiddle {
 	background-color: transparent;
 	padding-top: 1.5em;
 }
-.natBodyBordered .natTopPanelContents,.natBodyFluid .natTopPanelContents {
+
+.natBodyBordered .natTopPanelContents,
+.natBodyFluid .natTopPanelContents {
 	width: auto;
 	padding-left: 1em;
 	padding-right: 1em;
 }
-.natBodyFluid .natBottomBarContents,.natBodyFluid .natMiddle {
+
+.natBodyFluid .natBottomBarContents,
+.natBodyFluid .natMiddle {
 	margin-left: 10%;
 	margin-right: 10%;
 }
+
 .natBodyBordered {
 	margin: 0;
 }
-.natBodyBordered .natBottomBarContents,.natBodyBordered .natMiddle {
+
+.natBodyBordered .natBottomBarContents,
+.natBodyBordered .natMiddle {
 	padding-left: 1em;
 	padding-right: 1em;
 }
+
 .natEditBody .natMainContents {
 	margin: 0;
 	padding: 1em;
 }
-.natEditBody .natMiddle,.natEditBody .natMiddleContents {
+
+.natEditBody .natMiddle,
+.natEditBody .natMiddleContents {
 	width: auto;
 	padding: 0;
 	margin: 0;
 }
+
 .natEditBody .jqTabContents h2 {
 	font-size: 1.2em;
 	font-weight: normal;
 }
+
 .natEditBody .jqTab.settings th {
 	min-width: 14em;
 }
+
 .natTopBar {
-	background-color: var(--border-bg); 
+	background-color: var(--border-bg);
 	border-bottom: 1px solid var(--border);
 	top: -100px;
 	left: 0;
@@ -354,9 +546,11 @@ ul,ol {
 	-o-transition: top 1000ms;
 	transition: top 1000ms;
 }
+
 .natBodyStickyTopBar .natBodyContents {
 	margin-top: 95px;
 }
+
 .natBodyStickyTopBar .natTopBar {
 	box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.25);
 	position: fixed;
@@ -364,28 +558,34 @@ ul,ol {
 	top: 0;
 	font-size: 98%;
 }
+
 .natBodyStickyTopBar .natTopBar .natTopBarContents {
 	padding-top: 0.75em;
 	padding-bottom: 0.75em;
 }
+
 .natBodyStickyTopBar .natTopBar .natWebLogo {
 	width: auto;
 	height: 1.5em;
 }
+
 .natTopBarContents {
 	padding: 1.5em 1em;
 	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 }
+
 .natTopBar .natUserActions {
 	padding: 0;
 	flex-grow: 1;
 }
+
 .natTopBar .natLangs {
 	top: 0.5em;
 	right: 0.2em;
 }
+
 .natLangs a {
 	float: right;
 	margin: 0 0.5em 0 0;
@@ -393,12 +593,16 @@ ul,ol {
 	display: inline;
 	line-height: 1;
 }
+
 .natTopBar .natLangs a:hover {
 	background: transparent;
 }
-.natUserActions .natTopicAction,.natUserActions .natUserAction {
+
+.natUserActions .natTopicAction,
+.natUserActions .natUserAction {
 	margin-left: 1em;
 }
+
 .natPanelToggle a {
 	padding: 0 1em;
 	text-decoration: none;
@@ -406,20 +610,27 @@ ul,ol {
 	line-height: 2.5em;
 	display: inline-block;
 	white-space: nowrap;
-  border-bottom: none;
+	border-bottom: none;
 }
+
 .natPanelToggle a .jqIcon {
 	padding: 0 0.5em 0 0;
 }
-.natPanelToggle .natPanelToggleClose,.natPanelToggle.open .natPanelToggleSearch {
+
+.natPanelToggle .natPanelToggleClose,
+.natPanelToggle.open .natPanelToggleSearch {
 	display: none;
 }
-.natPanelToggle.open .natPanelToggleClose,.natPanelToggle .natPanelToggleSearch {
+
+.natPanelToggle.open .natPanelToggleClose,
+.natPanelToggle .natPanelToggleSearch {
 	display: inline-block;
 }
+
 .natUserActions .natAccountAction {
 	margin-left: 3em;
 }
+
 .natAccountAction img {
 	border-radius: 50%;
 	width: 32px;
@@ -427,25 +638,34 @@ ul,ol {
 	padding: 0;
 	margin: 0 0 0 -24px;
 }
-.cmtComment .imagePlain_left,.cmtComment .imageSimple_left {
+
+.cmtComment .imagePlain_left,
+.cmtComment .imageSimple_left {
 	border-radius: 50%;
 }
-.natTopBar .natPanelToggle.open a,.natTopBar a:hover {
+
+.natTopBar .natPanelToggle.open a,
+.natTopBar a:hover {
 	background-color: var(--accent);
 	color: var(--bg);
 	text-decoration: none;
 }
-.natTopBar .natWebTitle a,.natTopBar .natWebTitle a:hover {
+
+.natTopBar .natWebTitle a,
+.natTopBar .natWebTitle a:hover {
 	background-color: transparent;
 }
+
 .natWebTitle {
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 0.75em;
 }
+
 .natUserActions {
 	float: right;
 }
+
 .natBanner {
 	width: 100%;
 	min-height: 9em;
@@ -458,14 +678,17 @@ ul,ol {
 	flex-direction: column;
 	justify-content: center;
 }
+
 .natBannerContents {
 	z-index: 2;
 	position: relative;
 	padding: 2em;
 }
+
 .natBannerTextEffect {
 	display: inline-block;
 }
+
 .natBannerPhoto {
 	position: absolute;
 	top: 0;
@@ -477,6 +700,7 @@ ul,ol {
 	background-position: center;
 	background-size: cover;
 }
+
 .natBanner .natBannerButtons {
 	display: none;
 	position: absolute;
@@ -486,23 +710,28 @@ ul,ol {
 	width: 3em;
 	z-index: 3;
 }
+
 .natBanner .natBannerButtons a {
 	margin-left: 0.5em;
 	cursor: pointer;
 	color: var(--bg);
 	text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
+
 .natBanner .natBannerButtons a:hover {
 	color: #d33e3e;
 }
+
 .natBannerVideo {
 	padding: 0;
 	background: var(--bg);
 }
+
 .natBannerVideo .natBannerContents {
 	position: relative;
 	margin: 4em auto;
 }
+
 .natBannerVideo video {
 	position: absolute;
 	min-width: 100%;
@@ -513,42 +742,52 @@ ul,ol {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+
 .natBanner.jqTrianglify {
 	position: relative;
 	background-color: transparent;
 }
+
 .natBanner.jqTrianglify canvas {
 	position: absolute;
 	top: 0;
 	left: 0;
 }
+
 .jqTrianglifyPaletteSelector {
 	max-width: 38em;
 }
+
 .jqTrianglifyPaletteSelector label {
 	float: left;
 	width: 1.5em;
 	margin: 0.5em 0.5em 0 1px;
 }
+
 .jqTrianglifyPaletteSelector input {
 	display: none;
 }
+
 .jqTrianglifyPaletteSelector .swatch {
 	outline: 1px solid #aaa;
 	display: inline-block;
 }
+
 .jqTrianglifyPaletteSelector .swatch.selected {
 	outline: 2px solid #b22222;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+
 .jqTrianglifyPaletteSelector .swatch span {
 	display: inline-block;
 	width: 1.5em;
 }
+
 .natBanner a {
 	text-decoration: none;
 	color: var(--bg);
 }
+
 .natBannerTitle {
 	color: var(--bg);
 	font-size: 2.7em;
@@ -556,6 +795,7 @@ ul,ol {
 	font-weight: 500;
 	text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
+
 .natBannerSubtitle {
 	color: var(--bg);
 	line-height: 1.3em;
@@ -563,11 +803,16 @@ ul,ol {
 	text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 	text-transform: uppercase;
 }
-.natBannerDarkTitle a,.natBannerDarkSubtitle a,.natBannerDarkTitle,.natBannerDarkSubtitle {
+
+.natBannerDarkTitle a,
+.natBannerDarkSubtitle a,
+.natBannerDarkTitle,
+.natBannerDarkSubtitle {
 	color: inherit;
 	text-shadow: none;
 	font-weight: normal;
 }
+
 @keyframes kenburns {
 	0% {
 		transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
@@ -579,16 +824,21 @@ ul,ol {
 		transform: scale3d(1.4, 1.4, 1.4) translate3d(-5px, 5px, 0px);
 	}
 }
+
 .natBannerAnimate {
 	animation: kenburns 20s ease-in-out;
 	transform: scale3d(1.4, 1.4, 1.4) translate3d(-5px, 5px, 0px);
 }
+
 .natBanner.jqParticles canvas {
 	position: absolute;
 	top: 0;
 	left: 0;
 }
+
+
 /* bottom */
+
 .natBottomBar {
 	background-color: var(--border-bg);
 	border-top: 1px solid var(--border);
@@ -598,109 +848,192 @@ ul,ol {
 	margin-top: 4.28em;
 	padding-bottom: 200px;
 }
-.natCopyRight,.natCopyRight a,.natPageCacheBanner,.natPageCacheBanner a {
+
+.natCopyRight,
+.natCopyRight a,
+.natPageCacheBanner,
+.natPageCacheBanner a {
 	color: var(--fg);
 }
-.natSideMap,.natCopyRight,.natPageCacheBanner {
+
+.natSideMap,
+.natCopyRight,
+.natPageCacheBanner {
 	margin-top: 0;
 	margin-bottom: 2em;
 	display: block;
 }
+
 .natPageCacheBanner {
 	margin-top: 4em;
 }
+
 .natBottomBarContents {
 	margin: 0em 1.9231em;
 	padding: 2em 2em 3.5em;
 }
-.natRenameBody .natBottomBar,.natValidateBody .natBottomBar,.natAttachBody .natBottomBar,.natSolrBody .natBottomBar {
+
+.natRenameBody .natBottomBar,
+.natValidateBody .natBottomBar,
+.natAttachBody .natBottomBar,
+.natSolrBody .natBottomBar {
 	visibility: hidden;
 }
-.natBottomBarContents h2,.natBottomBarContents h3,.natBottomBarContents h4 {
+
+.natBottomBarContents h2,
+.natBottomBarContents h3,
+.natBottomBarContents h4 {
 	margin-top: 0;
 }
+
+
 /* web menu */
+
 .natWebMenu {
 	margin-bottom: 0;
 	border: 0;
 	display: inline-block;
 	vertical-align: middle;
 }
-.natUserActions a,.natWebMenu li a {
+
+.natUserActions a,
+.natWebMenu li a {
 	font-weight: 400;
 }
-.natWebMenuContents > ul > li,.natWebMenuContents > ul > li > a,.natWebMenuContents > ul > li > .foswikiCurrentWebHomeLink {
+
+.natWebMenuContents>ul>li,
+.natWebMenuContents>ul>li>a,
+.natWebMenuContents>ul>li>.foswikiCurrentWebHomeLink {
 	background-color: transparent;
 	color: var(--fg);
 }
-.natTopicActions .natLikeAction,.natTopicActions .natLikeAction:hover a,.natTopicActions .natLikeAction a:hover {
+
+.natTopicActions .natLikeAction,
+.natTopicActions .natLikeAction:hover a,
+.natTopicActions .natLikeAction a:hover {
 	background-color: transparent;
 	color: var(--bg);
 }
-.natHistoryTopicActions a:hover,.natHistoryTopicActions a:hover .ma,.natHistoryTopicActions a:hover .fa,.natTopicActions .natUserAction:hover,.natTopicActions .natTopicAction:hover,.natTopicActions .sfHover .natMoreActionsTopicAction,.natWebMenu li a:hover,.natWebMenu li.sfHover,.natWebMenu li.sfHover > a,.natWebMenuContents > ul > li > a:hover,.natWebMenuContents > ul > li > li > a.current,.natWebMenuContents > ul > li > li > a.current:hover,.natWebMenuContents > ul > li > .foswikiCurrentWebHomeLink:hover {
+
+.natHistoryTopicActions a:hover,
+.natHistoryTopicActions a:hover .ma,
+.natHistoryTopicActions a:hover .fa,
+.natTopicActions .natUserAction:hover,
+.natTopicActions .natTopicAction:hover,
+.natTopicActions .sfHover .natMoreActionsTopicAction,
+.natWebMenu li a:hover,
+.natWebMenu li.sfHover,
+.natWebMenu li.sfHover>a,
+.natWebMenuContents>ul>li>a:hover,
+.natWebMenuContents>ul>li>li>a.current,
+.natWebMenuContents>ul>li>li>a.current:hover,
+.natWebMenuContents>ul>li>.foswikiCurrentWebHomeLink:hover {
 	background-color: var(--accent);
 	color: var(--bg);
-  	filter: none;
+	filter: none;
 }
+
 .natWebMenu li a:hover {
 	filter: brightness(var(--hover-brightness)) !important;
 }
-.natHistoryTopicActions a.disabled,.natHistoryTopicActions a.disabled:hover .fa,.natHistoryTopicActions a.disabled:hover .ma,.natHistoryTopicActions a.disabled:hover {
+
+.natHistoryTopicActions a.disabled,
+.natHistoryTopicActions a.disabled:hover .fa,
+.natHistoryTopicActions a.disabled:hover .ma,
+.natHistoryTopicActions a.disabled:hover {
 	background-color: transparent;
 	color: #ddd;
 }
-.natTopBar a:hover:active,.natTopBar a:hover:focus,.natWebMenu li a:active,.natWebMenu li a:focus,.natWebMenu li a:hover:active,.natWebMenu li a:hover:focus {
+
+.natTopBar a:hover:active,
+.natTopBar a:hover:focus,
+.natWebMenu li a:active,
+.natWebMenu li a:focus,
+.natWebMenu li a:hover:active,
+.natWebMenu li a:hover:focus {
 	background-color: #2472bf;
 	color: var(--bg);
 }
-.natTopBar .natWebTitle a,.natTopBar .natWebTitle a:hover,.natTopBar .natWebTitle a:active,.natTopBar .natWebTitle a:hover:active {
+
+.natTopBar .natWebTitle a,
+.natTopBar .natWebTitle a:hover,
+.natTopBar .natWebTitle a:active,
+.natTopBar .natWebTitle a:hover:active {
 	background: transparent;
 }
-.natUserActions,.natWebMenuContents > ul > li {
+
+.natUserActions,
+.natWebMenuContents>ul>li {
 	line-height: 2.5em;
 }
-.natUserActions a,.natWebMenuContents > ul > li > a {
+
+.natUserActions a,
+.natWebMenuContents>ul>li>a {
 	padding: 0 1em;
 }
+
+
 /* sidebar */
-.natSideBarHeader,.natSideBar {
+
+.natSideBarHeader,
+.natSideBar {
 	width: 20em;
 }
+
+
 /* right */
-.natBodyBoth .natSideBar,.natBodyRight .natSideBar {
+
+.natBodyBoth .natSideBar,
+.natBodyRight .natSideBar {
 	margin-right: -20em;
 }
-.natBodyBoth .natMiddleContents,.natBodyRight .natMiddleContents {
+
+.natBodyBoth .natMiddleContents,
+.natBodyRight .natMiddleContents {
 	margin-right: 20em;
 }
+
+
 /* left */
-.natBodyBoth .natSideBar,.natBodyLeft .natSideBar {
+
+.natBodyBoth .natSideBar,
+.natBodyLeft .natSideBar {
 	margin-left: -20em;
 }
-.natBodyBoth .natMiddleContents,.natBodyLeft .natMiddleContents {
+
+.natBodyBoth .natMiddleContents,
+.natBodyLeft .natMiddleContents {
 	margin-left: 20em;
 }
+
 .natSideBar h2 {
 	margin: 2.5em 0 0.5em;
 	font-size: 1.1429em;
 	/* 16px */
 	line-height: 1.5;
 }
-.natSideBar h2,.natSideBar h2 a {
+
+.natSideBar h2,
+.natSideBar h2 a {
 	display: block;
 	font-weight: 500;
 }
-.natSideBar h2.webLink,.natSideBarContents > h2:first-of-type {
+
+.natSideBar h2.webLink,
+.natSideBarContents>h2:first-of-type {
 	margin-top: 0;
 }
+
 .natSideBarContents h2.natFirstOfType {
 	margin-top: 0;
 }
+
 .natSideBar h3 {
 	font-size: 100%;
 	line-height: 1.5;
 	margin: 1em 0 0.5em;
 }
+
 .natSideBar li {
 	padding: 0.4285em 0;
 	border-bottom: 1px solid var(--border);
@@ -709,39 +1042,52 @@ ul,ol {
 .natSideBar .foswikiCurrentTopicLink {
 	color: var(--accent-bg-dark);
 }
+
 .natSideBar li a {
 	display: block;
 	background-color: transparent;
 	text-decoration: none !important;
 }
+
 .natSideBar li a:hover {
 	text-decoration: none !important;
 	border-bottom: none !important;
 }
+
 .natSolrBody .natSideBar li {
 	padding: 0.1em 0;
 }
+
+
 /* search box */
+
 .natSideBar .natSearchBox {
 	margin-bottom: 1.5em;
 }
+
 .natSearchBox .foswikiInputField {
 	border-width: 1px;
 	border-style: solid;
 	border-color: #bdbec5;
 }
+
 .natMain .natSearchBox {
 	background-color: transparent;
 }
+
 .natSearchBox .foswikiSubmit {
 	width: 32px;
 	height: 28px;
 	margin: -11px 0 0 0;
 	z-index: 1;
 }
-.natSearchBox .foswikiSubmit,.natSearchBox .foswikiSubmit:active,.natSearchBox .foswikiSubmit:hover {
+
+.natSearchBox .foswikiSubmit,
+.natSearchBox .foswikiSubmit:active,
+.natSearchBox .foswikiSubmit:hover {
 	background: none;
 }
+
 .natSearchBox form:after {
 	font-family: FontAwesome;
 	font-size: 110%;
@@ -756,23 +1102,30 @@ ul,ol {
 	width: 1.5em;
 	color: #bdbec5;
 }
+
 .natSearchBox form:hover:after {
 	color: #222;
 }
+
 .natSearchBox form.ui-autocomplete-busy:after {
 	display: none;
 }
-.natTopBar .natSearchBox,.natMain .natSearchBox {
+
+.natTopBar .natSearchBox,
+.natMain .natSearchBox {
 	float: right;
 	width: 280px;
 	margin-top: 6px;
 }
+
 .natSolrBody .natSearchBox {
 	display: none;
 }
+
 .natSearchBox .foswikiInputField {
 	width: 100%;
 }
+
 .natMain .natSearchBox .foswikiInputField {
 	/*border-bottom-style:none;
 	border-bottom-left-radius:0;
@@ -780,37 +1133,49 @@ ul,ol {
 	*/
 	border-radius: 0;
 }
+
+
 /*.natSearchBoxMenu.ui-autosuggest:after,.natSearchBoxMenu.ui-autosuggest:before {
 	right:37px;
 }
 */
+
 .natSearchBoxMenu.ui-autosuggest {
 	border-top: 0;
 	border-radius: 0 0 5px 5px;
 }
-.natSearchBoxMenu.ui-autosuggest:after,.natSearchBoxMenu.ui-autosuggest:before {
+
+.natSearchBoxMenu.ui-autosuggest:after,
+.natSearchBoxMenu.ui-autosuggest:before {
 	right: auto;
 	left: 37px;
 	display: none;
 }
+
 .natSearchBox .foswikiInputField:-ms-input-placeholder {
 	color: #818181;
 }
+
 .natSearchBox .foswikiInputField::placeholder {
 	color: #818181;
 }
+
 .natSearchBox .foswikiInputField:focus {
 	color: #333;
 }
+
 .natSearchBox .foswikiInputField:focus:-ms-input-placeholder {
 	color: #5d5d5d;
 }
+
 .natSearchBox .foswikiInputField:focus::placeholder {
 	color: #5d5d5d;
 }
+
 .natTopPanel {
 	background: #636363;
 }
+
 .natTopPanel .natSearchBox .foswikiInputField {
 	border: 0;
 	padding: 0.5em 0;
@@ -818,67 +1183,149 @@ ul,ol {
 	background: transparent;
 	color: var(--bg);
 }
+
 .natTopPanel .natSearchBox .foswikiInputField::placeholder {
 	color: #ddd;
 }
+
 .natTopPanel .natSearchBox .foswikiInputField:focus::placeholder {
 	color: #aaa;
 }
-.natTopPanel .natSearchBox .foswikiInputField,.natTopPanel .natSearchBox .foswikiInputField:focus {
+
+.natTopPanel .natSearchBox .foswikiInputField,
+.natTopPanel .natSearchBox .foswikiInputField:focus {
 	box-shadow: none;
 }
+
 .natTopPanel .natSearchBox .foswikiSubmit {
 	display: none;
 }
+
 .natTopPanel .natSearchBox form:after {
 	display: none;
 }
+
 .natBody .ui-autocomplete-loading {
 	background: none !important;
 }
+
+
 /* topic actions */
+
 .natMainHeaderContents .natNewAction {
 	display: none;
 }
+
+
 /* typography */
-.natBottomBar h3,.natSideBar h2,.natSideBar h2 a {
+
+.natBottomBar h3,
+.natSideBar h2,
+.natSideBar h2 a {
 	color: var(--accent);
 }
-.natBottomBar h3,.natSideBar h2,.natSideBar h2 a:hover {
+
+.natBottomBar h3,
+.natSideBar h2,
+.natSideBar h2 a:hover {
 	border-style: solid;
+	border-color: var(--border);
 }
-.foswikiTocTitle,h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+
+.foswikiTocTitle,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
 	color: var(--accent);
 }
-.foswikiGrayText,.foswikiGrayText a,h1 .foswikiTopicSummary,.foswikiTopicSummary,.foswikiTopicInfo,.foswikiTopicInfo a,.foswikiRevision a,.foswikiRevision,.natBreadCrumbs,.natBreadCrumbs a,.natBreadCrumbs .natSep,h2 .foswikiGrayText a,.foswikiFormSteps h2 .foswikiGrayText a {
+
+.foswikiGrayText,
+.foswikiGrayText a,
+h1 .foswikiTopicSummary,
+.foswikiTopicSummary,
+.foswikiTopicInfo,
+.foswikiTopicInfo a,
+.foswikiRevision a,
+.foswikiRevision,
+.natBreadCrumbs,
+.natBreadCrumbs a,
+.natBreadCrumbs .natSep,
+h2 .foswikiGrayText a,
+.foswikiFormSteps h2 .foswikiGrayText a {
 	color: #818181;
 }
+
+
 /* hover */
-a:hover,a:hover .foswikiGrayText,a.ui-state-active:hover,.foswikiPageForm h2 a:hover,.foswikiFormSteps h2 a:hover,.foswikiGrayText a:hover,.foswikiTopicInfo a:hover,.hover,.hover a,.hover a:hover,.natBottomBarContents a:hover,.natBottomBarContents .jqButton:hover,.natBreadCrumbs a:hover,.natSideBar li a:hover,.natTopPanelContents a:hover,.ui-jqgrid .ui-state-hover a:hover,.ui-state-active a:hover,.ui-state-active.ui-state-hover {
+
+a:hover,
+a:hover .foswikiGrayText,
+a.ui-state-active:hover,
+.foswikiPageForm h2 a:hover,
+.foswikiFormSteps h2 a:hover,
+.foswikiGrayText a:hover,
+.foswikiTopicInfo a:hover,
+.hover,
+.hover a,
+.hover a:hover,
+.natBottomBarContents a:hover,
+.natBottomBarContents .jqButton:hover,
+.natBreadCrumbs a:hover,
+.natTopPanelContents a:hover,
+.ui-jqgrid .ui-state-hover a:hover,
+.ui-state-active a:hover,
+.ui-state-active.ui-state-hover {
 	background-color: transparent;
-  filter: brightness(var(--hover-brightness));
-  border-bottom: dotted 1px;
+	filter: brightness(var(--hover-brightness));
+	border-bottom: dotted 1px;
 }
-a:hover.ecpEdit,.redDot a:hover {
-  color: var(--accent);
+
+.natSideBar li a:hover {
+	background-color: transparent;
+	filter: brightness(var(--hover-brightness));
+}
+
+a:hover.ecpEdit,
+.redDot a:hover {
+	color: var(--accent);
 	background: transparent;
 }
-a:active,a:hover:active,.natSideBar li a:active,.natSideBar li a:hover:active {
+
+a:active,
+a:hover:active,
+.natSideBar li a:active,
+.natSideBar li a:hover:active {
 	color: var(--bg-dark);
 }
+
+
 /* tabpane */
+
 .jqTab {
 	background: var(--bg);
 }
+
 .jqTabPaneDefault .jqTab {
 	border-left: 0;
 	border-right: 0;
 	border-bottom: 0;
 }
+
 .jqTabPaneDefault .jqTabGroup {
 	font-size: 14px;
 }
-.jqTabPaneDefault > .jqTabGroup a,.jqTabPaneDefault > .jqTabGroup a:hover {
+
+.jqTabPaneDefault>.jqTabGroup a,
+.jqTabPaneDefault>.jqTabGroup a:hover {
 	border: 1px solid #bdbec5;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
@@ -892,38 +1339,52 @@ a:active,a:hover:active,.natSideBar li a:active,.natSideBar li a:hover:active {
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmRmZGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 	/* IE9 */
 	background: -moz-linear-gradient(top, var(--bg) fff 0%, #ececec 100%);
-	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%, var(--bg) fff),color-stop(100%, #ececec));
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--bg) fff), color-stop(100%, #ececec));
 	background: -webkit-linear-gradient(top, var(--bg) fff 0%, #ececec 100%);
 	background: -o-linear-gradient(top, var(--bg) fff 0%, #ececec 100%);
 	background: -ms-linear-gradient(top, var(--bg) fff 0%, #ececec 100%);
 	background: linear-gradient(top, var(--bg) fff 0%, #ececec 100%);
 }
-.jqTabPaneSimple > .jqTabGroup a,.jqTabPanePlain > .jqTabGroup a {
+
+.jqTabPaneSimple>.jqTabGroup a,
+.jqTabPanePlain>.jqTabGroup a {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 	border-color: #bdbec5;
 }
-.jqTabPaneDefault > .jqTabGroup a:hover,.jqTabPanePlain > .jqTabGroup a:hover,.jqTabPaneSimple > .jqTabGroup a:hover {
+
+.jqTabPaneDefault>.jqTabGroup a:hover,
+.jqTabPanePlain>.jqTabGroup a:hover,
+.jqTabPaneSimple>.jqTabGroup a:hover {
 	color: inherit;
 	box-shadow: 0px -2px 15px -5px rgba(0, 0, 0, 0.3);
 	border-top-color: #6fa4d8;
 	border-left-color: #6fa4d8;
 	border-right-color: #6fa4d8;
 }
-.jqTabPaneSimple > .jqTabGroup a,.jqTabPanePlain > .jqTabGroup a,.jqTabPaneSimple > .jqTabGroup a:hover,.jqTabPanePlain > .jqTabGroup a:hover {
+
+.jqTabPaneSimple>.jqTabGroup a,
+.jqTabPanePlain>.jqTabGroup a,
+.jqTabPaneSimple>.jqTabGroup a:hover,
+.jqTabPanePlain>.jqTabGroup a:hover {
 	padding: 0.4em 1em;
 }
-.jqTabPaneDefault > .jqTabGroup li.current a:hover,.jqTabPanePlain > .jqTabGroup li.current a:hover,.jqTabPaneSimple > .jqTabGroup li.current a:hover {
+
+.jqTabPaneDefault>.jqTabGroup li.current a:hover,
+.jqTabPanePlain>.jqTabGroup li.current a:hover,
+.jqTabPaneSimple>.jqTabGroup li.current a:hover {
 	box-shadow: none;
 	border-top-color: #bdbec5;
 	border-left-color: #bdbec5;
 	border-right-color: #bdbec5;
 }
-.jqTabPaneDefault > .jqTabGroup li {
+
+.jqTabPaneDefault>.jqTabGroup li {
 	padding: 0;
 	margin-right: 0.4em;
 }
-.jqTabPaneDefault > .jqTabGroup li a:before {
+
+.jqTabPaneDefault>.jqTabGroup li a:before {
 	font-family: FontAwesome;
 	content: "\f0da";
 	display: inline-block;
@@ -934,141 +1395,225 @@ a:active,a:hover:active,.natSideBar li a:active,.natSideBar li a:hover:active {
 	text-align: center;
 	width: 1.5em;
 }
-.jqTabPaneDefault > .jqTabGroup li.current a:before {
+
+.jqTabPaneDefault>.jqTabGroup li.current a:before {
 	content: "\f0d7";
 }
-.jqTabPaneDefault > .jqTabGroup li {
+
+.jqTabPaneDefault>.jqTabGroup li {
 	background: none;
 	height: auto;
 }
-.jqTabPaneDefault > .jqTabGroup li.current {
+
+.jqTabPaneDefault>.jqTabGroup li.current {
 	background: var(--bg);
 }
-.jqTabPaneDefault > .jqTabGroup li.current a {
+
+.jqTabPaneDefault>.jqTabGroup li.current a {
 	background: var(--bg);
 	border-bottom: 1px solid var(--bg);
 }
-.jqTabPaneDefault > .jqTabGroup li.current a:hover,.jqTabPaneDefault > .jqTabGroup li.current a {
+
+.jqTabPaneDefault>.jqTabGroup li.current a:hover,
+.jqTabPaneDefault>.jqTabGroup li.current a {
 	background: none;
 	height: auto;
 }
+
 .jqTabPaneDefault .jqTabContents {
 	padding: 1em 0 0 0;
 }
+
+
 /* buttons */
-input[type="button"],input[type="submit"],.foswikiSubmit,.foswikiButton,.ui-button,.jqButton {
+
+input[type="button"],
+input[type="submit"],
+.foswikiSubmit,
+.foswikiButton,
+.ui-button,
+.jqButton {
 	text-shadow: none;
 	font-size: 14px;
 	line-height: 1.5;
 	border-color: #bdbec5;
-	/* http://colorzilla.com/gradient-editor/var(--bg)fff+0,ececec+100;
-	Custom */
 	background: #ececec;
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmRmZGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 	/* IE9 */
-	background: -moz-linear-gradient(top, var(--bg) fff 0%, #ececec 100%);
-	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%, var(--bg) fff),color-stop(100%, #ececec));
-	background: -webkit-linear-gradient(top, var(--bg) fff 0%, #ececec 100%);
-	background: -o-linear-gradient(top, var(--bg) fff 0%, #ececec 100%);
-	background: -ms-linear-gradient(top, var(--bg) fff 0%, #ececec 100%);
-	background: linear-gradient(top, var(--bg) fff 0%, #ececec 100%);
+	background: -moz-linear-gradient(top, #fff 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #ececec));
+	background: -webkit-linear-gradient(top, #fff 0%, #ececec 100%);
+	background: -o-linear-gradient(top, #fff 0%, #ececec 100%);
+	background: -ms-linear-gradient(top, #fff 0%, #ececec 100%);
+	background: linear-gradient(top, #fff 0%, #ececec 100%);
 	padding: 0.4em 0.7em;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
 }
+
 .ui-dialog-buttonset .ui-button {
 	padding: 0.4em 0.7em;
 }
+
 .ui-button {
 	border-radius: 0;
 }
-.ui-corner-all,.ui-corner-top,.ui-corner-left,.ui-corner-tl {
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
 	border-top-left-radius: 4px;
 }
-.ui-corner-all,.ui-corner-top,.ui-corner-right,.ui-corner-tr {
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
 	border-top-right-radius: 4px;
 }
-.ui-corner-all,.ui-corner-bottom,.ui-corner-left,.ui-corner-bl {
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
 	border-bottom-left-radius: 4px;
 }
-.ui-corner-all,.ui-corner-bottom,.ui-corner-right,.ui-corner-br {
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
 	border-bottom-right-radius: 4px;
 }
-input[type="button"],input[type="submit"],.foswikiSubmit,.foswikiButton,.jqTabPaneDefault > .jqTabGroup a,.jqTabPanePlain > .jqTabGroup a,.jqTabPaneSimple > .jqTabGroup a,.ui-button,a.jqButton {
+
+input[type="button"],
+input[type="submit"],
+.foswikiSubmit,
+.foswikiButton,
+.jqTabPaneDefault>.jqTabGroup a,
+.jqTabPanePlain>.jqTabGroup a,
+.jqTabPaneSimple>.jqTabGroup a,
+.ui-button,
+a.jqButton {
 	-webkit-transition: box-shadow 500ms ease, border 200ms ease;
 	-moz-transition: box-shadow 500ms ease, border 200ms ease;
 	-ms-transition: box-shadow 500ms ease, border 200ms ease;
 	-o-transition: box-shadow 500ms ease, border 200ms ease;
 	transition: box-shadow 500ms ease, border 200ms ease;
 }
-input[type="button"]:hover,input[type="submit"]:hover,.foswikiSubmit:hover,.foswikiButton:hover,.ui-button:hover,.ui-button:hover:active,a.jqButton:hover,a.jqButton:hover:active {
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+.foswikiSubmit:hover,
+.foswikiButton:hover,
+.ui-button:hover,
+.ui-button:hover:active,
+a.jqButton:hover,
+a.jqButton:hover:active {
 	box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.3);
 	border-color: #6fa4d8;
 	color: inherit;
 }
-input[type="button"]:hover:active,input[type="submit"]:hover:active,.foswikiSubmit:hover:active,.foswikiButton:hover:active,.ui-button:hover:active,a.jqButton:hover:active {
+
+input[type="button"]:hover:active,
+input[type="submit"]:hover:active,
+.foswikiSubmit:hover:active,
+.foswikiButton:hover:active,
+.ui-button:hover:active,
+a.jqButton:hover:active {
 	box-shadow: none;
 }
+
 .ui-icon {
 	vertical-align: text-bottom;
 }
+
 .jqButtonIcon.img {
 	padding-left: 24px;
 }
-.jqButtonIcon.ma,.jqButtonIcon.fa {
+
+.jqButtonIcon.ma,
+.jqButtonIcon.fa {
 	margin-right: 0.5em;
 }
+
 .jqButtonSimple {
 	padding: 0;
 	background: transparent;
 }
-span.jqButtonSimple:hover,a.jqButtonSimple:hover {
+
+span.jqButtonSimple:hover,
+a.jqButtonSimple:hover {
 	box-shadow: none;
 	color: var(--accent);
 }
-.dataTables_paginate .ui-button.ui-state-active,.dataTables_paginate .ui-button.ui-state-default:hover {
+
+.dataTables_paginate .ui-button.ui-state-active,
+.dataTables_paginate .ui-button.ui-state-default:hover {
 	box-shadow: none;
 	color: var(--bg);
 	background: #b22;
 }
+
+
 /* icon colors */
-.jqButton .ma,.jqButton .fa,.jqButton .ma,.jqButton .fa,.jqButtonIcon .ma,.jqButtonIcon.fa {
-	color: var(--accent);;
+
+.jqButton .ma,
+.jqButton .fa,
+.jqButton .ma,
+.jqButton .fa,
+.jqButtonIcon .ma,
+.jqButtonIcon.fa {
+	color: var(--accent);
+	;
 }
-.jqButtonHover .ma,.jqButtonHover .fa {
+
+.jqButtonHover .ma,
+.jqButtonHover .fa {
 	color: var(--accent);
 }
+
 .jqButtonIcon.fa-check {
 	color: #5a9b51;
 }
+
 .jqButtonHover .jqButtonIcon.fa-check {
 	color: #129600;
 }
+
 .jqButtonIcon.fa-times {
 	color: #f95253;
 }
+
 .jqButtonHover .jqButtonIcon.fa-times {
 	color: #ff2c2e;
 }
-.jqButtonDisabled .jqButtonIcon.fa,.jqButtonDisabled .jqButtonIcon.ma {
+
+.jqButtonDisabled .jqButtonIcon.fa,
+.jqButtonDisabled .jqButtonIcon.ma {
 	color: #888;
 }
+
+
 /* jquery-ui */
+
 .ui-widget-header {
 	/* http://colorzilla.com/gradient-editor/var(--bg)fff+0,f3f3f3+100;
 	Custom */
 	background: #f3f3f3;
 	background: url(data:image/svg+xml;
-	base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmRmZGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+ base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmRmZGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 	/* IE9 */
 	background: -moz-linear-gradient(top, var(--bg) fff 0%, #f3f3f3 100%);
-	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%, var(--bg) fff),color-stop(100%, #f3f3f3));
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--bg) fff), color-stop(100%, #f3f3f3));
 	background: -webkit-linear-gradient(top, var(--bg) fff 0%, #f3f3f3 100%);
 	background: -o-linear-gradient(top, var(--bg) fff 0%, #f3f3f3 100%);
 	background: -ms-linear-gradient(top, var(--bg) fff 0%, #f3f3f3 100%);
 	background: linear-gradient(top, var(--bg) fff 0%, #f3f3f3 100%);
 }
+
 .ui-dialog {
 	border: 0;
 	border-radius: 4px;
@@ -1076,20 +1621,26 @@ span.jqButtonSimple:hover,a.jqButtonSimple:hover {
 	-moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
 	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
 }
+
 .ui-dialog .ui-dialog-titlebar {
 	background: var(--border-bg);
 	color: var(--accent);
 	border-color: var(--border);
 }
+
 .ui-widget-content {
 	/*border-color:#bdbec5;
 	*/
 }
+
 .ui-widget-overlay {
 	background: #000;
 	opacity: 0.2;
 }
+
+
 /* blockui */
+
 .blockMsg {
 	background: var(--bg);
 	-webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
@@ -1104,84 +1655,138 @@ span.jqButtonSimple:hover,a.jqButtonSimple:hover {
 	transition: all 0.3s ease 0s;
 	padding: 2.5em 2em;
 }
-.blockUI h1,.blockUI h2,.blockUI h3 {
+
+.blockUI h1,
+.blockUI h2,
+.blockUI h3 {
 	color: #333;
 	font-size: 1.6em;
 	line-height: 1.3;
 	margin: 0;
 }
-body > .blockOverlay {
+
+body>.blockOverlay {
 	background: #000;
 	opacity: 0.2;
 }
+
+
 /* scroll to top button */
+
 a.natScrollTop {
 	-webkit-box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.5);
 	box-shadow: 1px 1px 0px 0 rgba(0, 0, 0, 0.5);
 	border-radius: 50%;
 }
-a.natScrollTop,a:hover.natScrollTop {
+
+a.natScrollTop,
+a:hover.natScrollTop {
 	background: var(--bg);
 }
+
+
 /* pnotify */
+
 .ui-pnotify-icon {
 	width: 1.5em;
 	height: 1.5em;
 	float: left;
 	margin-top: 0;
 }
+
 .ui-pnotify-icon .ui-icon {
 	float: none;
 	display: inline-block;
 }
+
+
 /* message boxes */
-.foswikiSuccessMessage,.foswikiErrorMessage,.foswikiWarningMessage,.foswikiInfoMessage,.foswikiTipMessage {
+
+.foswikiSuccessMessage,
+.foswikiErrorMessage,
+.foswikiWarningMessage,
+.foswikiInfoMessage,
+.foswikiTipMessage {
 	background-position: 1em 1em;
 }
-.foswikiInfoMessage, .foswikiTipMessage {
-	background-image: url(../FamFamFamSilkIcons/lightbulb.png);
-    background-color: var(--accent-fg-light);
-    border-color: var(--accent-border);
-    color: var(--accent-border2-bg);
-}
+
+
 /* tables */
+
 table.mceLayout {
 	table-layout: fixed;
 }
-.mce-content-body table,.foswikiTable {
+
+.mce-content-body table,
+.foswikiTable {
 	margin: 0 0 1.5em 0;
 	font-size: 0.9285em;
 	/* 13px */
 	line-height: 1.5;
 	border: 1px solid #e4e4e4;
 }
-.mce-content-body th,.mce-content-body td,.foswikiTable > thead > tr > th,.foswikiTable > thead > tr > td,.foswikiTable > tfoot > tr > th,.foswikiTable > tfoot > tr > td,.foswikiTable > tbody > tr > th,.foswikiTable > tbody > tr > td {
+
+.mce-content-body th,
+.mce-content-body td,
+.foswikiTable>thead>tr>th,
+.foswikiTable>thead>tr>td,
+.foswikiTable>tfoot>tr>th,
+.foswikiTable>tfoot>tr>td,
+.foswikiTable>tbody>tr>th,
+.foswikiTable>tbody>tr>td {
 	border: 1px solid #e4e4e4;
 }
-.mce-content-body th,.mce-content-body th h2,.mce-content-body th h3,.mce-content-body th h4,.foswikiTable th,.foswikiTable th h2,.foswikiTable th h3,.foswikiTable th h4 {
+
+.mce-content-body th,
+.mce-content-body th h2,
+.mce-content-body th h3,
+.mce-content-body th h4,
+.foswikiTable th,
+.foswikiTable th h2,
+.foswikiTable th h3,
+.foswikiTable th h4 {
 	color: #222;
 	font-weight: 500;
 	text-decoration: none;
 	background-color: var(--border-bg);
 	vertical-align: top;
 }
-.mce-content-body th a,.mce-content-body th a:hover,.mce-content-body th span,.foswikiTable th a,.foswikiTable th a:hover,.foswikiTable th span {
+
+.mce-content-body th a,
+.mce-content-body th a:hover,
+.mce-content-body th span,
+.foswikiTable th a,
+.foswikiTable th a:hover,
+.foswikiTable th span {
 	color: #222;
 }
+
+
 /* toc */
+
 .foswikiToc ul {
 	margin-top: 0.5em;
 	padding: 0.5em 0 0;
 }
+
 .foswikiToc li {
 	margin-left: 0;
 }
+
+
 /* classification plugin */
-.tagCloud a:hover,.clsBrowser .current,.jstree .jstree-clicked,.clsTagCloud a:hover,.clsTagCloud .hilite,.clsTagCloud .current {
+
+.tagCloud a:hover,
+.clsBrowser .current,
+.jstree .jstree-clicked,
+.clsTagCloud a:hover,
+.clsTagCloud .hilite,
+.clsTagCloud .current {
 	background-color: var(--accent) !important;
 	color: var(--bg) !important;
 }
+
 .jqTextboxListValue {
 	background-color: #f7f7f7;
 	border: 1px solid #cfcfcf;
@@ -1190,53 +1795,101 @@ table.mceLayout {
 	-moz-box-shadow: 0 0 2px var(--bg) fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
 	box-shadow: 0 0 2px var(--bg) fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
 }
-.solrHierarchyChildren a,.clsSubCategories a,.clsSubCategories {
+
+.solrHierarchyChildren a,
+.clsSubCategories a,
+.clsSubCategories {
 	color: #a1a1a1;
 }
-.solrHierarchyChildren a:hover,.clsSubCategories a:hover {
+
+.solrHierarchyChildren a:hover,
+.clsSubCategories a:hover {
 	color: var(--accent);
 }
-.solrTopicInfo .ma,.solrTopicInfo .fa {
+
+.solrTopicInfo .ma,
+.solrTopicInfo .fa {
 	color: #bbb;
 }
+
 .clsIndexItem {
 	margin-bottom: 1.5em;
 }
+
 .clsCategoryItem {
 	margin-bottom: 0.5em;
 }
+
+
 /* forms */
+
 .ui-natedit {
 	margin: 0;
 }
+
 .ui-natedit-container {
 	margin: 0;
 }
-input[type="search"],input[type="tel"],input[type="text"],input[type="password"],.foswikiInputField,select.ui-pg-selbox,select,.foswikiSelect,.foswikiTextarea,textarea {
+
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="password"],
+.foswikiInputField,
+select.ui-pg-selbox,
+select,
+.foswikiSelect,
+.foswikiTextarea,
+textarea {
 	padding: 0.4em 0.5em;
 	border-radius: 2px;
 	background-color: var(--border-bg);
 	border: 1px solid var(--border);
 	box-shadow: inset 2px 2px 4px var(--border-bg);
 }
+
 input[type="text"].jqUIDatepicker {
 	border-radius: 2px 0 0 2px;
 }
-select[disabled],input[disabled],textarea[disabled] {
+
+select[disabled],
+input[disabled],
+textarea[disabled] {
 	color: #aaa;
 	background-color: #f8f8f8;
 }
-input::-ms-reveal,input::-ms-clear {
+
+input::-ms-reveal,
+input::-ms-clear {
 	display: none;
 }
-.foswikiTextarea:focus, textarea:focus,select.ui-pg-selbox:focus, /* jqgrid */
-select:focus,.foswikiSelect:focus,input[type=search]:focus,input[type=text]:focus,input[type=tel]:focus,input[type=password]:focus,.foswikiInputField:focus {
-	border-color: #16beef;
+
+.foswikiTextarea:focus,
+textarea:focus,
+select.ui-pg-selbox:focus,
+
+/* jqgrid */
+
+select:focus,
+.foswikiSelect:focus,
+input[type=search]:focus,
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=password]:focus,
+.foswikiInputField:focus {
+	border-color: var(--accent);
 }
+
 input[type="text"].jqFarbtastic {
 	box-shadow: none;
 }
-fieldset,.foswikiAlt,.alt,.cmtCommentOdd,.foswikiPageForm,.foswikiFormSteps {
+
+fieldset,
+.foswikiAlt,
+.alt,
+.cmtCommentOdd,
+.foswikiPageForm,
+.foswikiFormSteps {
 	border-radius: 4px;
 	border: 1px solid var(--border);
 	box-shadow: 0 0 10px var(--border-bg);
@@ -1244,72 +1897,155 @@ fieldset,.foswikiAlt,.alt,.cmtCommentOdd,.foswikiPageForm,.foswikiFormSteps {
 	Custom */
 	background: var(--border-bg);
 	/* Old browsers */
-	background: -moz-linear-gradient(top,var(--bg) fff 0%,var(--border-bg) 100%);
+	background: -moz-linear-gradient(top, var(--bg) fff 0%, var(--border-bg) 100%);
 	/* FF3.6+ */
-	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%, var(--bg) fff),color-stop(100%, var(--border-bg)));
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--bg) fff), color-stop(100%, var(--border-bg)));
 	/* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,var(--bg) fff 0%,var(--border-bg) 100%);
+	background: -webkit-linear-gradient(top, var(--bg) fff 0%, var(--border-bg) 100%);
 	/* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,var(--bg) fff 0%,var(--border-bg) 100%);
+	background: -o-linear-gradient(top, var(--bg) fff 0%, var(--border-bg) 100%);
 	/* Opera 11.10+ */
-	background: -ms-linear-gradient(top,var(--bg) fff 0%,var(--border-bg) 100%);
+	background: -ms-linear-gradient(top, var(--bg) fff 0%, var(--border-bg) 100%);
 	/* IE10+ */
-	background: linear-gradient(to bottom,var(--bg) fff 0%,var(--border-bg) 100%);
+	background: linear-gradient(to bottom, var(--bg) fff 0%, var(--border-bg) 100%);
 	/* W3C */
 }
-.cmtSubComments .cmtCommentOdd,.ui-dialog .foswikiFormSteps,.foswikiMetaData .foswikiDataForm,.foswikiMetaData .foswikiAttachments,.foswikiMetaData .foswikiComments,.foswikiMetaData .foswikiAttachmentsProcess {
+
+.cmtSubComments .cmtCommentOdd,
+.ui-dialog .foswikiFormSteps,
+.foswikiMetaData .foswikiDataForm,
+.foswikiMetaData .foswikiAttachments,
+.foswikiMetaData .foswikiComments,
+.foswikiMetaData .foswikiAttachmentsProcess {
 	background: transparent;
 	box-shadow: none;
 }
+
 .cmtSubComments .cmtCommentOdd {
 	border: 0;
 }
+
 pre {
 	border: 0;
 }
-.natNoteHeading,.ui-state-active a,.ui-state-active,.ui-state-active.ui-state-hover,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active,#natLoginBanner,.natSideBar .foswikiCurrentTopicLink .foswikiGrayText,.foswikiAlt h2,.alt h2,h2.marked,.jqTabContents h2,.jqTabContents h2 a,.foswikiPageForm h2,.foswikiPageForm h2 a,.foswikiFormSteps h2,.foswikiFormSteps h2 a {
+
+.natNoteHeading,
+.ui-state-active a,
+.ui-state-active,
+.ui-state-active.ui-state-hover,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+#natLoginBanner,
+.natSideBar .foswikiCurrentTopicLink .foswikiGrayText,
+.foswikiAlt h2,
+.alt h2,
+h2.marked,
+.jqTabContents h2,
+.jqTabContents h2 a,
+.foswikiPageForm h2,
+.foswikiPageForm h2 a,
+.foswikiFormSteps h2,
+.foswikiFormSteps h2 a {
 	color: var(--bg);
 	font-weight: 500;
 }
+
 a.jqButton.jqButtonDisabled {
 	color: #888 !important;
 }
-.foswikiAlt h3,.foswikiAlt h4,.foswikiAlt h5,.foswikiAlt h6,.alt h3,.alt h4,.alt h5,.alt h6,.jqTabContents h3,.jqTabContents h4,.jqTabContents h5,.jqTabContents h6,.jqTabContents h3 a,.jqTabContents h4 a,.jqTabContents h5 a,.jqTabContents h6 a,.foswikiPageForm h3,.foswikiPageForm h4,.foswikiPageForm h5,.foswikiPageForm h6,.foswikiPageForm h3 a,.foswikiPageForm h4 a,.foswikiPageForm h5 a,.foswikiPageForm h6 a,.foswikiFormSteps h3,.foswikiFormSteps h4,.foswikiFormSteps h5,.foswikiFormSteps h6,.foswikiFormSteps h3 a,.foswikiFormSteps h4 a,.foswikiFormSteps h5 a,.foswikiFormSteps h6 a {
+
+.foswikiAlt h3,
+.foswikiAlt h4,
+.foswikiAlt h5,
+.foswikiAlt h6,
+.alt h3,
+.alt h4,
+.alt h5,
+.alt h6,
+.jqTabContents h3,
+.jqTabContents h4,
+.jqTabContents h5,
+.jqTabContents h6,
+.jqTabContents h3 a,
+.jqTabContents h4 a,
+.jqTabContents h5 a,
+.jqTabContents h6 a,
+.foswikiPageForm h3,
+.foswikiPageForm h4,
+.foswikiPageForm h5,
+.foswikiPageForm h6,
+.foswikiPageForm h3 a,
+.foswikiPageForm h4 a,
+.foswikiPageForm h5 a,
+.foswikiPageForm h6 a,
+.foswikiFormSteps h3,
+.foswikiFormSteps h4,
+.foswikiFormSteps h5,
+.foswikiFormSteps h6,
+.foswikiFormSteps h3 a,
+.foswikiFormSteps h4 a,
+.foswikiFormSteps h5 a,
+.foswikiFormSteps h6 a {
 	color: #2375c5;
 	/*font-weight:500;
 	*/
 }
-.foswikiGridForm h3,.foswikiGridForm h3 a {
+
+.foswikiGridForm h3,
+.foswikiGridForm h3 a {
 	color: inherit;
 }
+
 .foswikiGridHeader {
 	padding-top: 0.2em;
 	max-width: 10em;
 }
-.foswikiAlt h2,.foswikiAlt h3,.foswikiAlt h4,.foswikiAlt h5,.foswikiAlt h6,.alt h2,.alt h3,.alt h4,.alt h5,.alt h6 {
+
+.foswikiAlt h2,
+.foswikiAlt h3,
+.foswikiAlt h4,
+.foswikiAlt h5,
+.foswikiAlt h6,
+.alt h2,
+.alt h3,
+.alt h4,
+.alt h5,
+.alt h6 {
 	font-weight: 500;
 }
+
+
 /* select2 */
-.select2-container .select2-choice:hover,.select2-container .select2-choice {
+
+.select2-container .select2-choice:hover,
+.select2-container .select2-choice {
 	border-color: #ccc;
 }
-.select2-container .select2-choice:hover,.select2-container .select2-choice,.select2-container .select2-choice:hover > div,.select2-container .select2-choice > div {
+
+.select2-container .select2-choice:hover,
+.select2-container .select2-choice,
+.select2-container .select2-choice:hover>div,
+.select2-container .select2-choice>div {
 	background: var(--border-bg) !important;
 	border-radius: 2px !important;
 	box-shadow: inset 2px 2px 4px var(--border) !important;
 }
+
 .select2-container .select2-choice div {
 	border: 0;
 }
+
 .select2-results {
 	margin-left: 0;
 	margin-right: 0;
 	margin-bottom: 0;
 	padding: 0;
 }
+
 .select2-results .select2-highlighted {
 	background-color: #16beef;
 }
+
 .select2-drop {
 	box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.15);
 	overflow: hidden;
@@ -1318,21 +2054,32 @@ a.jqButton.jqButtonDisabled {
 	border-top-right-radius: 0;
 	border-top: 0;
 }
+
+
 /* solr plugin */
+
 .solrHeader .foswikiFormSteps {
 	background: #f4f4f4;
 }
+
 .solrHeader .foswikiFormSteps hr {
 	display: none;
 }
-.solrHeader .solrPager,.solrFooter .solrPager {
+
+.solrHeader .solrPager,
+.solrFooter .solrPager {
 	border-color: var(--border);
 }
+
+
 /* blog plugin */
+
 .blogCategoryTitle {
 	display: none;
 }
-.blogPrev,.blogNext {
+
+.blogPrev,
+.blogNext {
 	position: relative;
 	display: inline-block;
 	width: 48%;
@@ -1346,74 +2093,102 @@ a.jqButton.jqButtonDisabled {
 	-o-transition: background 100ms;
 	transition: background 100ms;
 }
+
 .blogPrev {
 	margin-right: 0.5em;
 }
+
 .blogNext {
 	text-align: right;
 }
-.blogPrev a,.blogNext a {
+
+.blogPrev a,
+.blogNext a {
 	padding: 1em 2em;
 	display: block;
 	text-decoration: none;
 }
-.blogPrev:hover,.blogNext:hover {
+
+.blogPrev:hover,
+.blogNext:hover {
 	background-color: var(--accent);
 }
-.blogPrev:hover a,.blogNext:hover a {
+
+.blogPrev:hover a,
+.blogNext:hover a {
 	color: var(--bg);
 }
-.blogPrev:before,.blogPrev:after {
+
+.blogPrev:before,
+.blogPrev:after {
 	left: 0;
 }
-.blogNext:before,.blogNext:after {
+
+.blogNext:before,
+.blogNext:after {
 	right: 0;
 }
-.blogPrev:before,.blogPrev:after,.blogNext:before,.blogNext:after {
+
+.blogPrev:before,
+.blogPrev:after,
+.blogNext:before,
+.blogNext:after {
 	width: 15px;
 	height: 50%;
 	position: absolute;
 	content: "";
 }
+
 .blogPrev:before {
 	top: 0;
 	background: linear-gradient(to left top, transparent 50%, var(--bg) 50%);
 }
+
 .blogPrev:after {
 	top: 50%;
 	background: linear-gradient(to left bottom, transparent 50%, var(--bg) 50%);
 }
+
 .blogNext:before {
 	top: 0;
 	background: linear-gradient(to right top, transparent 50%, var(--bg) 50%);
 }
+
 .blogNext:after {
 	top: 50%;
 	background: linear-gradient(to right bottom, transparent 50%, var(--bg) 50%);
 }
+
+
 /* image plugin */
+
 .imageFrame {
 	border-radius: 6px;
 	box-shadow: 2px 2px 10px -5px rgba(0, 0, 0, 0.5);
 	padding: 0;
 	background-color: #f2f2f2;
 }
+
 .imageFrame img {
 	border: 0;
 	padding: 0;
 	margin: -1px;
 }
+
 .imageFrame .imageHref {
 	border: 0;
 }
+
 .imageCaption {
 	text-align: center;
 	color: inherit;
 	padding: 0.4em 2px;
 }
+
 .imageCaption a {
 	text-decoration: none;
 }
+
 .natLoginBanner {
 	width: 100%;
 	height: 100%;
@@ -1424,54 +2199,118 @@ a.jqButton.jqButtonDisabled {
 	background-size: cover;
 	margin: 0;
 }
+
 .natLoginHeading {
 	font-size: 1.6923em;
 }
+
 .natLoginBanner .natLogin {
 	border-radius: 4px;
 	box-shadow: none;
 	background-color: rgba(255, 255, 255, 0.5);
 	border: 0;
 }
+
 .natLoginBanner .natLoginHeading {
 	color: var(--bg);
 	text-shadow: 0 0 1px #000;
 	font-weight: normal;
 }
+
 .natLoginBanner h3 {
 	color: #333;
 }
-.natLogin input[type="text"],.natLogin #username,.natLogin #password {
+
+.natLogin input[type="text"],
+.natLogin #username,
+.natLogin #password {
 	width: 100%;
 	box-shadow: none;
 }
+
 .natLogin .foswikiFormStep {
 	margin-left: 8em;
 	margin-right: 3em;
 }
+
 .natLoginBanner .natPoweredBy {
 	color: #333;
 }
-.natLoginBanner a:hover,.natPoweredBy:hover {
+
+.natLoginBanner a:hover,
+.natPoweredBy:hover {
 	color: #000;
 }
+
 .natLoginBanner .natContact {
 	display: none;
 }
+
+
 /* Syntax Highlighting */
+
 pre.syntaxHighlightingPlugin {
 	background: #002b36;
 	color: #eee8d5;
 }
+
+.searchBoxContainer {
+	background-color: var(--accent-fg);
+	border-color: var(--border2) !important;
+	border-radius: 4px;
+	padding: 0.678em 3em 0.678em 3em;
+	background-repeat: no-repeat;
+	border: 1px solid;
+	font-weight: bold;
+}
+
+.natSearchForm {
+	display: grid;
+	grid-template-columns: 1fr 2rem;
+}
+
+.twistyTrigger > a:hover {
+	border-bottom: none;
+}
+
+.Centers\/CCA {
+	border-bottom: solid 3.5px var(--cca);
+}
+
+.Centers\/CCB {
+	border-bottom: solid 3.5px var(--ccb);
+}
+
+.Centers\/CCM {
+	border-bottom: solid 3.5px var(--ccm);
+}
+
+.Centers\/CCN {
+	border-bottom: solid 3.5px var(--ccn);
+}
+
+.Centers\/CCQ {
+	border-bottom: solid 3.5px var(--ccq);
+}
+
+
+/* Media Queries */
+
 @media screen and (max-width: 1260px) {
 	.natBody .natTopBarContents {
 		width: auto;
 	}
-	.natBody .natBannerContents,.natBody .natTopPanelContents,.natBody .natBottomBarContents,.natBody .natMiddle {
+	.natBody .natBannerContents,
+	.natBody .natTopPanelContents,
+	.natBody .natBottomBarContents,
+	.natBody .natMiddle {
 		padding-left: 1em;
 		padding-right: 1em;
 	}
-	.natBody .natTopPanelContents,.natBody .natBottomBarContents,.natBody .natBannerContents,.natBody .natMiddle {
+	.natBody .natTopPanelContents,
+	.natBody .natBottomBarContents,
+	.natBody .natBannerContents,
+	.natBody .natMiddle {
 		width: auto;
 		margin-left: 0;
 		margin-right: 0;
@@ -1486,12 +2325,21 @@ pre.syntaxHighlightingPlugin {
 		padding: 1em;
 	}
 }
+
 @media screen and (max-width: 1024px) {
-	.natBody .natMiddle,.natBody .natMiddleContents,.natBody .natMainHeaderContents,.natBody .natMainContents,.natBody .natMainFooterContents,.natBody .natBottomBar,.natBody .natBottomBarContents {
+	.natBody .natMiddle,
+	.natBody .natMiddleContents,
+	.natBody .natMainHeaderContents,
+	.natBody .natMainContents,
+	.natBody .natMainFooterContents,
+	.natBody .natBottomBar,
+	.natBody .natBottomBarContents {
 		margin-right: 0;
 		margin-left: 0;
 	}
-	.natUserAction .natTopicActionShortLabel,.natSideBar,.natLangSwitcher {
+	.natUserAction .natTopicActionShortLabel,
+	.natSideBar,
+	.natLangSwitcher {
 		display: none;
 	}
 	.natNavToggle {
@@ -1530,10 +2378,12 @@ pre.syntaxHighlightingPlugin {
 	.natMainHeaderContents .natNewAction {
 		display: inline;
 	}
-	.natTopicActions .natTopicAction,.natTopicActions .natTopicAction:hover {
+	.natTopicActions .natTopicAction,
+	.natTopicActions .natTopicAction:hover {
 		margin-left: 8px;
 	}
 }
+
 @media screen and (max-width: 800px) {
 	.natLogin {
 		background: 0;
@@ -1554,8 +2404,11 @@ pre.syntaxHighlightingPlugin {
 		margin-right: 0;
 	}
 }
+
 @media screen and (max-width: 620px) {
-	.natWebTitle,.natBreadCrumbs,.natUserActions .natUserAction {
+	.natWebTitle,
+	.natBreadCrumbs,
+	.natUserActions .natUserAction {
 		display: none;
 	}
 	.natUserActions {
@@ -1565,10 +2418,17 @@ pre.syntaxHighlightingPlugin {
 		top: 21px;
 		right: 7px;
 	}
-	.natEditBody .natEditTitle,.natEditBody .ui-natedit-align-buttons,.natEditBody .ui-natedit-list-buttons,.natEditBody .ui-natedit-insert-object-buttons,.natEditBody .ui-natedit-more-insert-buttons,.natEditBody .ui-natedit-tools-buttons,.natEditBody .natEditForceNewRevision {
+	.natEditBody .natEditTitle,
+	.natEditBody .ui-natedit-align-buttons,
+	.natEditBody .ui-natedit-list-buttons,
+	.natEditBody .ui-natedit-insert-object-buttons,
+	.natEditBody .ui-natedit-more-insert-buttons,
+	.natEditBody .ui-natedit-tools-buttons,
+	.natEditBody .natEditForceNewRevision {
 		display: none;
 	}
-	.natEditBody .jqTabPaneDefault > .jqTabGroup a,.natEditBody .jqTabPaneDefault > .jqTabGroup a:hover {
+	.natEditBody .jqTabPaneDefault>.jqTabGroup a,
+	.natEditBody .jqTabPaneDefault>.jqTabGroup a:hover {
 		font-size: 12px;
 	}
 }
