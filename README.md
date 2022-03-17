@@ -10,7 +10,7 @@ Custom stylesheets for the foswiki FI implementation.
 `[wikiadmin@foswiki templates]$ vim topbar.matter.nat.tmpl`
 - (Auto set the names to have a space?)
 - TL;DR https://wiki.flatironinstitute.org/SCC/Software/Slurm so far a class for div named 'fiCheatsheetMessage'
-- Ul / li style
+- Ul / li style on landing = change color to look like info/warnign box text.
 - Color styling on internal notification boxes
 - Style Table of contents
 - Private webs per center: where do they live? (aka subwebs of center? Or somewhere else? Where are the links to them? etc)
