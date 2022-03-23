@@ -5,16 +5,12 @@ Custom stylesheets for the foswiki FI implementation.
 - MOre bold login button on less than full-width
 - TL;DR http://foswiki/SCC/Software/Slurm  or http://foswiki/SCC/WebHome#chapter_scc_webhome_4
 - TL;DR https://wiki.flatironinstitute.org/SCC/Software/Slurm so far a class for div named 'fiCheatsheetMessage'
-
+- Landing page need help box styling (add dog like fido?)
 - Ul / li style http://foswiki/SCC/WebHome#chapter_scc_webhome_4 - fix the spacing and maybe increase the size? use negative space maybe expand sub items horizontally?
 - Ul / li style on landing = change color to look like info/warnign box text.
 
 - `[wikiadmin@foswiki templates]$ vim topbar.matter.nat.tmpl` (Auto set the names to have a space?)
-
-- Style Table of contents
-
-- Private webs per center: where do they live? (aka subwebs of center? Or somewhere else? Where are the links to them? etc)
-
+- center-conditional classes on info boxes for each center.
 - search bar results header https://wiki.flatironinstitute.org/Main/WebSearch#q=matter
 
 ## Done
@@ -43,10 +39,3 @@ Custom stylesheets for the foswiki FI implementation.
 ## Punt?
 - Need a clean template for user profiles. So far it would look like this: https://wiki.flatironinstitute.org/Main/FoswikiTest (Auto set the names to have a space?)
 - How to have important messages on the main landing page (eg: "MPI is broken...")
-
-
-<div class="foswikiInfoMessage sidebarInfoMessage"><h2>Need help? Contact SCC</h2>
-<p><i class="foswikiIcon jqIcon fa fa-envelope"></i> <a href="mailto:scicomp@flatironinstitute.org">scicomp@flatironinstitute.org</a></p>
-  <p><i class="foswikiIcon jqIcon fa fa-slack"></i> <span class="externalLink"><a class="natExternalLink" href="https://app.slack.com/client/T041VRG00/CBKC2NP9V" target="_blank" rel="noopener noreferrer">Slack #scicomp</a></span></p>
-   <p>Help us Help you: follow <a class="no-underline" href="/SCC/ReportingProblems">these guidelines</a>.</p>
-</div>
