@@ -1786,6 +1786,32 @@ a:hover.natScrollTop {
   color: #314b6f;
 }
 
+.sidebarInfoMessage {
+  background-image: none;
+  padding-left: 16px;
+}
+
+.sidebarInfoMessage p {
+  margin: 1em 0;
+  line-height: 1.75;
+}
+ 
+.subtext {
+  font-size: 11px;
+  text-transform: uppercase;
+  margin: 0.5em 0 0 0 !important;
+}
+
+.contact-head {
+  margin: 0 0 0.5em 0 !important;
+  font-size: 1.6em !important;
+}
+
+.noline {
+  border-bottom: none !important;
+  font-weight: 600;
+}
+
 .foswikiTipMessage {
   background-image: url(../FamFamFamSilkIcons/lightbulb.png);
   background-color: #eff6ff;

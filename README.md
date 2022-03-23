@@ -2,6 +2,7 @@
 Custom stylesheets for the foswiki FI implementation.
 
 ## TODO
+- MOre bold login button on less than full-width
 - TL;DR http://foswiki/SCC/Software/Slurm  or http://foswiki/SCC/WebHome#chapter_scc_webhome_4
 - TL;DR https://wiki.flatironinstitute.org/SCC/Software/Slurm so far a class for div named 'fiCheatsheetMessage'
 
@@ -42,3 +43,10 @@ Custom stylesheets for the foswiki FI implementation.
 ## Punt?
 - Need a clean template for user profiles. So far it would look like this: https://wiki.flatironinstitute.org/Main/FoswikiTest (Auto set the names to have a space?)
 - How to have important messages on the main landing page (eg: "MPI is broken...")
+
+
+<div class="foswikiInfoMessage sidebarInfoMessage"><h2>Need help? Contact SCC</h2>
+<p><i class="foswikiIcon jqIcon fa fa-envelope"></i> <a href="mailto:scicomp@flatironinstitute.org">scicomp@flatironinstitute.org</a></p>
+  <p><i class="foswikiIcon jqIcon fa fa-slack"></i> <span class="externalLink"><a class="natExternalLink" href="https://app.slack.com/client/T041VRG00/CBKC2NP9V" target="_blank" rel="noopener noreferrer">Slack #scicomp</a></span></p>
+   <p>Help us Help you: follow <a class="no-underline" href="/SCC/ReportingProblems">these guidelines</a>.</p>
+</div>
