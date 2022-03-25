@@ -8,9 +8,6 @@ Custom stylesheets for the foswiki FI implementation.
 - Landing page need help box styling (add dog like fido?)
 - Ul / li style http://foswiki/SCC/WebHome#chapter_scc_webhome_4 - fix the spacing and maybe increase the size? use negative space maybe expand sub items horizontally?
 - Ul / li style on landing = change color to look like info/warnign box text.
-
-- `[wikiadmin@foswiki templates]$ vim topbar.matter.nat.tmpl` (Auto set the names to have a space?)
-- center-conditional classes on info boxes for each center.
 - search bar results header https://wiki.flatironinstitute.org/Main/WebSearch#q=matter
 
 ## Done
@@ -32,6 +29,8 @@ Custom stylesheets for the foswiki FI implementation.
 - Color styling on internal notification boxes
 - Console programming layout an alternate class for <code> (see #!/bin/bash on http://foswiki/SCC/Software/Slurm)
 - Subwebs "expand" button on Web landing pages: more... is kind of hidden: replace by an icon?
+- center-conditional classes on info boxes for each center.
+- `[wikiadmin@foswiki templates]$ vim topbar.matter.nat.tmpl` (Auto set the names to have a space?)
 
 ## What Am I?
 - Button alignment

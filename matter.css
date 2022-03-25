@@ -1715,6 +1715,7 @@ a:hover.natScrollTop {
 
 .foswikiHelp,
 .foswikiSuccessMessage,
+.foswikiMessage,
 .foswikiErrorMessage,
 .foswikiWarningMessage,
 .foswikiInfoMessage,
@@ -1770,11 +1771,11 @@ a:hover.natScrollTop {
 }
 
 .foswikiErrorMessage a,
-.foswikiErrorMessage h2 {
+.foswikiErrorMessage h2, .cca a {
   color: #991b1b;
 }
 
-.foswikiErrorMessage a:hover {
+.foswikiErrorMessage a:hover, .cca a:hover {
   color: #b91c1c;
 }
 
@@ -1784,6 +1785,78 @@ a:hover.natScrollTop {
   background-color: #eff6ff;
   border-color: #537eba;
   color: #314b6f;
+}
+
+.cca {
+  background-image: url(https://wiki.flatironinstitute.org/pub/ComputationalCenters/CCA/WebPreferences/cca-square.png);
+  background-color: #fbefef;
+  border-color: var(--cca);
+  color: #991b1b;
+}
+
+.ccb {
+  background-image: url(https://wiki.flatironinstitute.org/pub/ComputationalCenters/CCB/WebPreferences/ccb-square.png);
+  background-color:#f5f9f1;
+  border-color: var(--ccb);
+  color: #557231;
+}
+
+.ccb a {
+  color: #557231;
+}
+
+.ccb a:hover { 
+  color: var(--ccb);
+}
+
+.ccm {
+  background-image: url(https://wiki.flatironinstitute.org/pub/ComputationalCenters/CCM/WebPreferences/ccm-square.png);
+  background-color: #fef4eb;
+  border-color: var(--ccm);
+  color: #b05307;
+}
+
+.ccm a {
+  color: #b05307;
+}
+
+.ccm a:hover { 
+  color: #D76609;
+}
+
+.ccn {
+  background-image: url(https://wiki.flatironinstitute.org/pub/ComputationalCenters/CCN/WebPreferences/ccn-square.png);
+  background-color: #ebfbff;
+  border-color: var(--ccn);
+  color: #00758F;
+}
+
+.ccn a {
+  color: #00758F;
+}
+
+.ccn a:hover { 
+  color: #00A7CC;
+}
+
+.ccq {
+  background-image: url(https://wiki.flatironinstitute.org/pub/ComputationalCenters/CCQ/WebPreferences/ccq-square.png);
+  background-color: #EDE6EF;
+  border-color: var(--ccq);
+  color: #684870;
+}
+
+.ccq a {
+  color: #684870;
+}
+
+.ccq a:hover { 
+  color: #704b68;
+}
+
+.cca, .ccb, .ccm, .ccn, .ccq {
+  background-size: 60px 60px;
+  padding-left: 6.05em;
 }
 
 .sidebarInfoMessage {
@@ -1827,9 +1900,14 @@ a:hover.natScrollTop {
 
 /* TODO: WHERE AM I USED? */
 .foswikiMessage {
-  background-color: #fef7e3;
+  /* background-color: #fef7e3;
   border-color: #efe5ca;
-  color: #6b6860;
+  color: #6b6860; */
+  background-image: url(../FamFamFamSilkIcons/lightbulb.png);
+  background-color: #f6f6f6;
+  border-color: var(--fg);foswikiInfoMessage cca
+  color: var(--fg);
+  box-shadow: 0 0 10px var(--border-bg);
 }
 
 .foswikiWarningMessage {
@@ -1990,6 +2068,10 @@ textarea {
   background-color: var(--border-bg);
   border: 1px solid var(--border);
   box-shadow: inset 2px 2px 4px var(--border-bg);
+}
+
+.solrSearchField, #solrSorting, .solrCheckboxContainer > input {
+  background-color: #ffffff !important;
 }
 
 input[type="text"].jqUIDatepicker {
