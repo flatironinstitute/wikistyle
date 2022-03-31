@@ -2,7 +2,7 @@
 Custom stylesheets for the foswiki FI implementation.
 
 ## TODO
-- MOre bold login button on less than full-width
+- More bold login button on less than full-width
 - TL;DR http://foswiki/SCC/Software/Slurm  or http://foswiki/SCC/WebHome#chapter_scc_webhome_4
 - TL;DR https://wiki.flatironinstitute.org/SCC/Software/Slurm so far a class for div named 'fiCheatsheetMessage'
 - Landing page need help box styling (add dog like fido?)
