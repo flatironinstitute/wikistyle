@@ -1,7 +1,7 @@
 @import url(../NatSkin/BaseStyle.css);
 
 /*
-  Flatiron Foswiki Matter Template 
+  Flatiron Foswiki Matter Template
   Flatiron Institute
   flatironinstitute.org
 */
@@ -1764,7 +1764,7 @@ a:hover.natScrollTop {
 }
 
 .foswikiErrorMessage {
-  background-image: url(../FamFamFamSilkIcons/exclamation.png);
+  background-image: url(../CustomFlatironIcons/circle-exclamation.png);
   background-color: #fef2f2;
   border-color: #f87171;
   color: #991b1b;
@@ -1781,7 +1781,7 @@ a:hover.natScrollTop {
 
 .foswikiHelp,
 .foswikiInfoMessage {
-  background-image: url(../FamFamFamSilkIcons/information.png);
+  background-image: url(../CustomFlatironIcons/circle-info.png);
   background-color: #eff6ff;
   border-color: #537eba;
   color: #314b6f;
@@ -1805,7 +1805,7 @@ a:hover.natScrollTop {
   color: #557231;
 }
 
-.ccb a:hover { 
+.ccb a:hover {
   color: var(--ccb);
 }
 
@@ -1820,7 +1820,7 @@ a:hover.natScrollTop {
   color: #b05307;
 }
 
-.ccm a:hover { 
+.ccm a:hover {
   color: #D76609;
 }
 
@@ -1835,7 +1835,7 @@ a:hover.natScrollTop {
   color: #00758F;
 }
 
-.ccn a:hover { 
+.ccn a:hover {
   color: #00A7CC;
 }
 
@@ -1850,7 +1850,7 @@ a:hover.natScrollTop {
   color: #684870;
 }
 
-.ccq a:hover { 
+.ccq a:hover {
   color: #704b68;
 }
 
@@ -1868,7 +1868,7 @@ a:hover.natScrollTop {
   margin: 1em 0;
   line-height: 1.75;
 }
- 
+
 .subtext {
   font-size: 11px;
   text-transform: uppercase;
@@ -1886,7 +1886,7 @@ a:hover.natScrollTop {
 }
 
 .foswikiTipMessage {
-  background-image: url(../FamFamFamSilkIcons/lightbulb.png);
+  background-image: url(../CustomFlatironIcons/lightbulb.png);
   background-color: #eff6ff;
   border-color: #537eba;
   color: #314b6f;
@@ -1903,7 +1903,7 @@ a:hover.natScrollTop {
   /* background-color: #fef7e3;
   border-color: #efe5ca;
   color: #6b6860; */
-  background-image: url(../FamFamFamSilkIcons/lightbulb.png);
+  background-image: url(../CustomFlatironIcons/lightbulb.png);
   background-color: #f6f6f6;
   border-color: var(--fg);
   color: var(--fg);
@@ -1911,7 +1911,7 @@ a:hover.natScrollTop {
 }
 
 .foswikiWarningMessage {
-  background-image: url(../FamFamFamSilkIcons/error.png);
+  background-image: url(../CustomFlatironIcons/circle-exclamation.png);
   background-color: #fefce8;
   border-color: #facc15;
   color: #854d0e;
@@ -1927,7 +1927,7 @@ a:hover.natScrollTop {
 }
 
 .foswikiSuccessMessage {
-  background-image: url(../FamFamFamSilkIcons/tick.png);
+  background-image: url(../CustomFlatironIcons/circle-check.png);
   background-color: rgb(240, 253, 244);
   border-color: #22c55e;
   color: #166534;
@@ -1939,14 +1939,10 @@ a:hover.natScrollTop {
 
 .fiCheatsheetMessage {
   background-color: var(--accent);
-  color:rgba(250, 250, 250, 0.95);  
+  color:rgba(250, 250, 250, 0.95);
   border-radius: var(--b-radius);
   font-weight: bolder;
   padding: 24px 16px;
-}
-
-.fiCheatsheetMessage code, .fiCheatsheetMessage table {
-  color: #333
 }
 
 .fiCheatsheetMessage > h2 {
@@ -1954,6 +1950,30 @@ a:hover.natScrollTop {
   border-color: var(--border);
   color:rgba(250, 250, 250, 0.95);
   margin-top: .5em;
+}
+
+.fiCheatsheetMessage h1, .fiCheatsheetMessage h2, .fiCheatsheetMessage h3, .fiCheatsheetMessage h4, .fiCheatsheetMessage h5, .fiCheatsheetMessage h6 {
+  color:rgba(250, 250, 250, 0.95);
+}
+
+.fiCheatsheetMessage a, .fiCheatsheetMessage h1 a, .fiCheatsheetMessage h2 a, .fiCheatsheetMessage h3 a, .fiCheatsheetMessage h4 a, .fiCheatsheetMessage h5 a, .fiCheatsheetMessage h6 a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.fiCheatsheetMessage code, .fiCheatsheetMessage table {
+  color: #333
+}
+
+.fiCheatsheetMessage table a {
+  border-bottom-color: #333;
+  color: #333;
+  text-decoration: none;
+}
+
+.fiCheatsheetMessage table a:hover {
+  border-bottom: 1px dotted #333;
+  text-decoration: none;
 }
 
 /* tables */
@@ -2536,7 +2556,7 @@ pre.syntaxHighlightingPlugin {
   padding: 8px 16px;
   border: 1px solid;
   border-color: var(--border);
-  font-size: 14px; 
+  font-size: 14px;
   line-height: 20px;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -2549,7 +2569,7 @@ pre.syntaxHighlightingPlugin {
 }
 
 span#search-id {
-  background-image: url(../FamFamFamSilkIcons/information.png);
+  background-image: url(../CustomFlatironIcons/circle-info.png);
   background-repeat: no-repeat;
   background-position: 2px 2px;
   width: 10px;
