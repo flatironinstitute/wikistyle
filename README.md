@@ -11,6 +11,7 @@ Custom stylesheets for the foswiki FI implementation.
 - search bar results header https://wiki.flatironinstitute.org/Main/WebSearch#q=matter
 - put links to mon7 and fido pages in a user's profile page (aka template!)
 - ASCII support inside %CODE% see https://wiki.flatironinstitute.org/Sandbox/TestingUserForms for example
+- high-contrast skin for the syntax highlighter
 
 ## Done
 - Underline doubles
