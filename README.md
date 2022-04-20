@@ -34,10 +34,10 @@ Custom stylesheets for the foswiki FI implementation.
 - Subwebs "expand" button on Web landing pages: more... is kind of hidden: replace by an icon?
 - center-conditional classes on info boxes for each center.
 - `[wikiadmin@foswiki templates]$ vim topbar.matter.nat.tmpl` (Auto set the names to have a space?)
+- Need a clean template for user profiles. So far it would look like this: https://wiki.flatironinstitute.org/Main/FoswikiTest (Auto set the names to have a space?)
 
 ## What Am I?
 - Button alignment
 
 ## Punt?
-- Need a clean template for user profiles. So far it would look like this: https://wiki.flatironinstitute.org/Main/FoswikiTest (Auto set the names to have a space?)
 - How to have important messages on the main landing page (eg: "MPI is broken...")
