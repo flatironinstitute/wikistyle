@@ -326,7 +326,7 @@ a {
 	text-decoration:none;
 	background-repeat: repeat-x;
 	background-position: bottom;
-	background-size: 100% 1px;
+	: 100% 1px;
 	background-image: linear-gradient(transparent, transparent 0px, #333 1px, #333);
 }
 .foswikiTopicInfo a,.foswikiRevision a {
@@ -1701,6 +1701,7 @@ a:hover.natScrollTop {
 
 .alt,
 .foswikiAlt,
+.foswikiAnnouncement,
 .foswikiErrorMessage,
 .foswikiHelp,
 .foswikiInfoMessage,
@@ -1713,6 +1714,7 @@ a:hover.natScrollTop {
   border-radius: var(--b-radius);
 }
 
+.foswikiAnnouncement,
 .foswikiHelp,
 .foswikiSuccessMessage,
 .foswikiMessage,
@@ -1722,8 +1724,11 @@ a:hover.natScrollTop {
 .foswikiTipMessage {
   background-position: 1em 20px;
   background-repeat: no-repeat;
+  background-size: 16px;
 }
 
+.foswikiAnnouncement p, 
+.foswikiAnnouncement li,
 .foswikiSuccessMessage p,
 .foswikiSuccessMessage li,
 .foswikiErrorMessage p,
@@ -1741,6 +1746,18 @@ a:hover.natScrollTop {
   font-weight: 500;
 }
 
+.foswikiAnnouncement h3, 
+.foswikiSuccessMessage h3,
+.foswikiErrorMessage h3,
+.foswikiWarningMessage h3,
+.foswikiHelp h3,
+.foswikiMessage h3,
+.foswikiInfoMessage h3,
+.foswikiTipMessage h3 {
+  margin-top: -2px;
+}
+
+.foswikiAnnouncement,
 .foswikiErrorMessage,
 .foswikiHelp,
 .foswikiInfoMessage,
@@ -1750,9 +1767,10 @@ a:hover.natScrollTop {
 .foswikiWarningMessage {
   border-radius: 4px;
   font-weight: bolder;
-  padding: 16px 16px 16px 3.0769em;
+  padding: 16px 14px 16px 3.0769em;
 }
 
+.foswikiAnnouncement a,
 .foswikiErrorMessage a,
 .foswikiHelp a,
 .foswikiInfoMessage a,
@@ -1764,14 +1782,14 @@ a:hover.natScrollTop {
 }
 
 .foswikiErrorMessage {
-  background-image: url(../CustomFlatironIcons/circle-exclamation.png);
+  background-image: url(../CustomFlatironIcons/circle-exclamation.svg);
   background-color: #fef2f2;
   border-color: #f87171;
   color: #991b1b;
 }
 
 .foswikiErrorMessage a,
-.foswikiErrorMessage h2, .cca a {
+.foswikiErrorMessage h2, .foswikiErrorMessage h3, .cca a {
   color: #991b1b;
 }
 
@@ -1781,7 +1799,7 @@ a:hover.natScrollTop {
 
 .foswikiHelp,
 .foswikiInfoMessage {
-  background-image: url(../CustomFlatironIcons/circle-info.png);
+  background-image: url(../CustomFlatironIcons/circle-info.svg);
   background-color: #eff6ff;
   border-color: #537eba;
   color: #314b6f;
@@ -1885,13 +1903,21 @@ a:hover.natScrollTop {
   font-weight: 600;
 }
 
+.foswikiAnnouncement {
+  background-image: url(../CustomFlatironIcons/circle-lightbulb.svg);
+  background-color: #636363;
+  border-color: #aaa;
+  color: var(--bg);
+}
+
 .foswikiTipMessage {
-  background-image: url(../CustomFlatironIcons/lightbulb.png);
+  background-image: url(../CustomFlatironIcons/circle-info.svg);
   background-color: #eff6ff;
   border-color: #537eba;
   color: #314b6f;
 }
 
+.foswikiAnnouncement code,
 .foswikiInfoMessage code,
 .foswikiTipMessage code {
   background-color: #cadff7;
@@ -1903,7 +1929,7 @@ a:hover.natScrollTop {
   /* background-color: #fef7e3;
   border-color: #efe5ca;
   color: #6b6860; */
-  background-image: url(../CustomFlatironIcons/lightbulb.png);
+  background-image: url(../CustomFlatironIcons/circle-lightbulb.svg);
   background-color: #f6f6f6;
   border-color: var(--fg);
   color: var(--fg);
@@ -1911,7 +1937,7 @@ a:hover.natScrollTop {
 }
 
 .foswikiWarningMessage {
-  background-image: url(../CustomFlatironIcons/circle-exclamation.png);
+  background-image: url(../CustomFlatironIcons/circle-warning.svg);
   background-color: #fefce8;
   border-color: #facc15;
   color: #854d0e;
@@ -1927,7 +1953,7 @@ a:hover.natScrollTop {
 }
 
 .foswikiSuccessMessage {
-  background-image: url(../CustomFlatironIcons/circle-check.png);
+  background-image: url(../CustomFlatironIcons/circle-check.svg);
   background-color: rgb(240, 253, 244);
   border-color: #22c55e;
   color: #166534;
@@ -1938,6 +1964,7 @@ a:hover.natScrollTop {
 }
 
 .fiCheatsheetMessage {
+  /* background-image: url(../CustomFlatironIcons/circle-reminder.svg); */
   background-color: var(--accent);
   color:rgba(250, 250, 250, 0.95);
   border-radius: var(--b-radius);
@@ -2473,7 +2500,7 @@ a.jqButton.jqButtonDisabled {
   top: 0;
   right: 0;
   background-repeat: no-repeat;
-  background-size: cover;
+  : cover;
   margin: 0;
 }
 
@@ -2569,7 +2596,7 @@ pre.syntaxHighlightingPlugin {
 }
 
 span#search-id {
-  background-image: url(../CustomFlatironIcons/circle-info.png);
+  background-image: url(../CustomFlatironIcons/circle-info.svg);
   background-repeat: no-repeat;
   background-position: 2px 2px;
   width: 10px;
