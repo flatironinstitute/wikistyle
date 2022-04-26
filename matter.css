@@ -2746,7 +2746,7 @@ span#search-id {
     font-size: 2em;
   }
   .natTopBar .natUserActions {
-    display: none;
+    margin-right: 50px;
   }
   .natTopBar .natWebMenu {
     display: block;
