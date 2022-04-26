@@ -1964,12 +1964,13 @@ a:hover.natScrollTop {
 }
 
 .fiCheatsheetMessage {
-  /* background-image: url(../CustomFlatironIcons/circle-reminder.svg); */
-  background-color: var(--accent);
   color:rgba(250, 250, 250, 0.95);
   border-radius: var(--b-radius);
   font-weight: bolder;
-  padding: 24px 16px;
+  padding: 16px 14px 16px 3.0769em;
+  background:
+  url(../CustomFlatironIcons/circle-reminder.svg) 1em 20px / 22px 22px no-repeat,
+  var(--accent) repeat;
 }
 
 .fiCheatsheetMessage > h2 {
@@ -1981,6 +1982,7 @@ a:hover.natScrollTop {
 
 .fiCheatsheetMessage h1, .fiCheatsheetMessage h2, .fiCheatsheetMessage h3, .fiCheatsheetMessage h4, .fiCheatsheetMessage h5, .fiCheatsheetMessage h6 {
   color:rgba(250, 250, 250, 0.95);
+  margin-top: 0;
 }
 
 .fiCheatsheetMessage a, .fiCheatsheetMessage h1 a, .fiCheatsheetMessage h2 a, .fiCheatsheetMessage h3 a, .fiCheatsheetMessage h4 a, .fiCheatsheetMessage h5 a, .fiCheatsheetMessage h6 a {

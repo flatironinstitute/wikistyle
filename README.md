@@ -5,7 +5,7 @@ Custom stylesheets for the foswiki FI implementation.
 - Previous 1234 Next on search results, remove underline and swap color (see screengrab on desktop)
 - More bold login button on less than full-width
 - Fix landing page search box to use the dark colors from the Need Help box to pop more, get rid of grayish blue.
-- High-contrast skin for the syntax highlighter - get web accessibility set from A11y.
+
 - Flathub page: write that content baby.
 
 ## Done
@@ -38,6 +38,7 @@ Custom stylesheets for the foswiki FI implementation.
 - How to have important messages on the main landing page (eg: "MPI is broken...")  class = foswikiAnnouncement 
 - foswikiWarningMessage => better color maybe dark yellow?
 - foswikiCheatsheetMessage add finger with tie icon as circle svg.
+- High-contrast skin for the syntax highlighter - get web accessibility set from A11y.
 
 ## Punt?
 - ASCII support inside %CODE% see https://wiki.flatironinstitute.org/Sandbox/TestingUserForms for example
