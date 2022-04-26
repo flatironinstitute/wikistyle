@@ -2610,7 +2610,7 @@ pre.syntaxHighlightingPlugin {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  padding-left: 1px !important;
+  padding-left: 1px;
 }
 
 .search-button:hover {
@@ -2714,7 +2714,6 @@ span#search-id {
     margin-right: 0;
     margin-left: 0;
   }
-  .natUserAction .natTopicActionShortLabel,
   .natSideBar,
   .natLangSwitcher {
     display: none;
