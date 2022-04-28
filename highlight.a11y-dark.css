@@ -2,98 +2,82 @@
 /* Based on the Tomorrow Night Eighties theme: https://github.com/isagalaev/highlight.js/blob/master/src/styles/tomorrow-night-eighties.css */
 /* @author: ericwbailey */
 
-/* Comment */
-.hljs-comment,
-.hljs-quote {
-  color: #d4d0ab;
-}
+/* 
+#2d2d2d Background
+#393939 Current Line
+#515151 Selection
+#cccccc Foreground
+#999999 Comment
+#f2777a Red
+#f99157 Orange
+#ffcc66 Yellow
+#99cc99 Green
+#66cccc Aqua
+#6699cc Blue
+#cc99cc Purple */
 
-/* Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-  color: #ffa07a;
-}
 
-/* Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-  color: #f5ab35;
-}
+body.hl {
+  background-color: #2d2d2d;
+ }
 
-/* Yellow */
-.hljs-attribute {
-  color: #ffd700;
-}
-
-/* Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-  color: #abe338;
-}
-
-/* Blue */
-.hljs-title,
-.hljs-section {
-  color: #00e0e0;
-}
-
-/* Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-  color: #dcc6e0;
-}
-
-.hljs {
+/* std: standard / no recognition */
+pre.hl {
   display: block;
   overflow-x: auto;
-  background: #2b2b2b;
-  color: #f8f8f2;
+  background: #2d2d2d;
+  color: #cccccc;
   padding: 0.5em;
+  font-size:14px; 
+  font-family:'Courier New',monospace;
+  font-weight: bold;
 }
 
-.hljs-emphasis {
+
+
+/* slc: single line comment
+com: multiline comment */
+.hl.slc, .hl.com { color: #999999; }
+
+/* TODO CHANGE COLORS AFTER THIS! */
+
+/* num: number */
+.hl.num { color: #f2777a; } 
+
+/* str: string 
+pps: preprocessor string */
+.hl.str, .hl.pps { color: #cc99cc; }
+
+/* opt: operator
+ppc: preprocessor */
+.hl.opt, .hl.ppc  { color:#f99157; }
+
+/* esc: escape character */
+.hl.esc { color: #66cccc; }
+
+/* kwX: keyword group X (X: a..z) */
+.hl.kwa { color:#6699cc; font-weight: bold;}
+.hl.kwb { color:#ffcc66; font-weight: bold;}
+.hl.kwc { color:#99cc99; font-weight: bold;}
+.hl.kwd { color:#3e999f; font-weight: bold;}
+
+/* Do these ever get used? Not in the andre-simon.de docs. */
+/* ipl: interpolation */
+/* lin: ??? */
+.hl.ipl { color:#545454; }
+.hl.lin { color:#545454; }
+
+
+.hl-emphasis {
   font-style: italic;
 }
 
-.hljs-strong {
+.hl-strong {
   font-weight: bold;
 }
 
 @media screen and (-ms-high-contrast: active) {
-  .hljs-addition,
-  .hljs-attribute,
-  .hljs-built_in,
-  .hljs-builtin-name,
-  .hljs-bullet,
-  .hljs-comment,
-  .hljs-link,
-  .hljs-literal,
-  .hljs-meta,
-  .hljs-number,
-  .hljs-params,
-  .hljs-string,
-  .hljs-symbol,
-  .hljs-type,
-  .hljs-quote {
+  .hl {
         color: highlight;
-    }
-
-    .hljs-keyword,
-    .hljs-selector-tag {
-        font-weight: bold;
     }
 }

@@ -1,99 +1,63 @@
 /* a11y-light theme */
 /* Based on the Tomorrow Night Eighties theme: https://github.com/isagalaev/highlight.js/blob/master/src/styles/tomorrow-night-eighties.css */
-/* @author: ericwbailey */
-
-/* Comment */
-.hljs-comment,
-.hljs-quote {
-  color: #696969;
+/* @author: lizlove */
+body.hl {
+ background-color: #fefefe;
 }
 
-/* Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-  color: #d91e18;
-}
-
-/* Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-  color: #aa5d00;
-}
-
-/* Yellow */
-.hljs-attribute {
-  color: #aa5d00;
-}
-
-/* Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-  color: #008000;
-}
-
-/* Blue */
-.hljs-title,
-.hljs-section {
-  color: #007faa;
-}
-
-/* Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-  color: #7928a1;
-}
-
-.hljs {
+/* std: standard / no recognition */
+pre.hl {
   display: block;
   overflow-x: auto;
   background: #fefefe;
   color: #545454;
   padding: 0.5em;
+  font-size:14px; 
+  font-family:'Courier New',monospace;
+  font-weight: bold;
 }
 
-.hljs-emphasis {
+/* num: number */
+.hl.num { color: #aa5d00; } 
+
+/* slc: single line comment
+com: multiline comment */
+.hl.slc, .hl.com { color: #696969; }
+
+/* str: string 
+pps: preprocessor string */
+.hl.str, .hl.pps { color: #008000; }
+
+/* opt: operator
+ppc: preprocessor */
+.hl.opt, .hl.ppc  { color:#007faa; }
+
+/* esc: escape character */
+.hl.esc { color: #d91e18; }
+
+/* kwX: keyword group X (X: a..z) */
+.hl.kwa { color:#7928a1; font-weight: bold;}
+.hl.kwb { color:#d91e18; font-weight: bold;}
+.hl.kwc { color:#aa5d00; font-weight: bold;}
+.hl.kwd { color:#3e999f; font-weight: bold;}
+
+/* Do these ever get used? Not in the andre-simon.de docs. */
+/* ipl: interpolation */
+/* lin: ??? */
+.hl.ipl { color:#545454; }
+.hl.lin { color:#545454; }
+
+
+.hl-emphasis {
   font-style: italic;
 }
 
-.hljs-strong {
+.hl-strong {
   font-weight: bold;
 }
 
 @media screen and (-ms-high-contrast: active) {
-  .hljs-addition,
-  .hljs-attribute,
-  .hljs-built_in,
-  .hljs-builtin-name,
-  .hljs-bullet,
-  .hljs-comment,
-  .hljs-link,
-  .hljs-literal,
-  .hljs-meta,
-  .hljs-number,
-  .hljs-params,
-  .hljs-string,
-  .hljs-symbol,
-  .hljs-type,
-  .hljs-quote {
+  .hl {
         color: highlight;
-    }
-
-    .hljs-keyword,
-    .hljs-selector-tag {
-        font-weight: bold;
     }
 }

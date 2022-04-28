@@ -1778,7 +1778,7 @@ a:hover.natScrollTop {
 .foswikiSuccessMessage a,
 .foswikiTipMessage a,
 .foswikiWarningMessage a {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid !important;
 }
 
 .foswikiErrorMessage {
@@ -1790,11 +1790,11 @@ a:hover.natScrollTop {
 
 .foswikiErrorMessage a,
 .foswikiErrorMessage h2, .foswikiErrorMessage h3, .cca a {
-  color: #991b1b;
+  color: #991b1b !important;
 }
 
 .foswikiErrorMessage a:hover, .cca a:hover {
-  color: #b91c1c;
+  color: #b91c1c !important;
 }
 
 .foswikiHelp,
