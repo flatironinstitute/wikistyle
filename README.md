@@ -3,6 +3,7 @@ Custom stylesheets for the foswiki FI implementation.
 
 ## TODO
 - Flathub page: write that content baby.
+- Create a version of TWISTY that has a preview
 
 ## Done
 - Underline doubles
