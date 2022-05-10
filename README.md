@@ -5,6 +5,7 @@ Custom stylesheets for the foswiki FI implementation.
 - Flathub page: write that content baby.
 - Create a version of TWISTY that has a preview
 - Cheatsheet: the icon is hard to recognize: maybe remove the circle around the hand and scale the whole hand to fit the entire size of the image since it is already white on dark blue?
+- Make the login window more explicit "you will be redirected to Fido then back here..."
 
 ## Done
 - Underline doubles
