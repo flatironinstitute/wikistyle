@@ -39,14 +39,14 @@
   color: #333;
   font-size: 15px;
   line-height: 1.7;
-  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
 }
 
 /* TODO Swap */
 
 .foswikiNewLink {
-	background: #eff6ff;
+  background: #eff6ff;
 }
 
 /* typo? */
@@ -64,7 +64,7 @@ label,
 .ui-natedit-toolbar,
 .jqTabGroup,
 .jqButton {
-  font-family: Arial, "Liberation Sans", FreeSans, sans-serif;
+  font-family: Arial, 'Liberation Sans', FreeSans, sans-serif;
 }
 
 .natBody .natEditBottomBar li {
@@ -90,6 +90,37 @@ b,
 th,
 strong {
   font-weight: 600;
+}
+
+button {
+  background: var(--accent);
+  background: -moz-linear-gradient(
+    top,
+    var(--accent) 0,
+    var(--accent-border-bg) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, var(--accent)),
+    color-stop(100%, var(--accent-border-bg))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    var(--accent) 0,
+    var(--accent-border-bg) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    var(--accent) 0,
+    var(--accent-border-bg) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    var(--accent) 0,
+    var(--accent-border-bg) 100%
+  );
 }
 
 ::-moz-selection {
@@ -262,7 +293,7 @@ h6,
 .natViewBody .natMainContents h6[id]:before,
 .natSolrBody .natMainContents .solrSearchHits:before {
   display: block;
-  content: " ";
+  content: ' ';
   margin-top: -80px;
   height: 80px;
   visibility: hidden;
@@ -1083,7 +1114,7 @@ hr {
   font-family: FontAwesome;
   font-size: 110%;
   font-weight: 600;
-  content: "\f002";
+  content: '\f002';
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -1378,7 +1409,7 @@ a:hover:active,
 
 .jqTabPaneDefault > .jqTabGroup li a:before {
   font-family: FontAwesome;
-  content: "\f0da";
+  content: '\f0da';
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -1389,7 +1420,7 @@ a:hover:active,
 }
 
 .jqTabPaneDefault > .jqTabGroup li.current a:before {
-  content: "\f0d7";
+  content: '\f0d7';
 }
 
 .jqTabPaneDefault > .jqTabGroup li {
@@ -1418,8 +1449,8 @@ a:hover:active,
 
 /* buttons */
 
-input[type="button"],
-input[type="submit"],
+input[type='button'],
+input[type='submit'],
 .foswikiSubmit,
 .foswikiButton,
 .ui-button,
@@ -1485,8 +1516,8 @@ input[type="submit"],
   border-bottom-right-radius: 4px;
 }
 
-input[type="button"],
-input[type="submit"],
+input[type='button'],
+input[type='submit'],
 .foswikiSubmit,
 .foswikiButton,
 .jqTabPaneDefault > .jqTabGroup a,
@@ -1501,8 +1532,8 @@ a.jqButton {
   transition: box-shadow 500ms ease, border 200ms ease;
 }
 
-input[type="button"]:hover,
-input[type="submit"]:hover,
+input[type='button']:hover,
+input[type='submit']:hover,
 .foswikiSubmit:hover,
 .foswikiButton:hover,
 .ui-button:hover,
@@ -1514,8 +1545,8 @@ a.jqButton:hover:active {
   color: inherit;
 }
 
-input[type="button"]:hover:active,
-input[type="submit"]:hover:active,
+input[type='button']:hover:active,
+input[type='submit']:hover:active,
 .foswikiSubmit:hover:active,
 .foswikiButton:hover:active,
 .ui-button:hover:active,
@@ -1727,7 +1758,7 @@ a:hover.natScrollTop {
   background-size: 16px;
 }
 
-.foswikiAnnouncement p, 
+.foswikiAnnouncement p,
 .foswikiAnnouncement li,
 .foswikiSuccessMessage p,
 .foswikiSuccessMessage li,
@@ -1746,7 +1777,7 @@ a:hover.natScrollTop {
   font-weight: 500;
 }
 
-.foswikiAnnouncement h3, 
+.foswikiAnnouncement h3,
 .foswikiSuccessMessage h3,
 .foswikiErrorMessage h3,
 .foswikiWarningMessage h3,
@@ -1789,11 +1820,14 @@ a:hover.natScrollTop {
 }
 
 .foswikiErrorMessage a,
-.foswikiErrorMessage h2, .foswikiErrorMessage h3, .cca a {
+.foswikiErrorMessage h2,
+.foswikiErrorMessage h3,
+.cca a {
   color: #991b1b !important;
 }
 
-.foswikiErrorMessage a:hover, .cca a:hover {
+.foswikiErrorMessage a:hover,
+.cca a:hover {
   color: #b91c1c !important;
 }
 
@@ -1814,7 +1848,7 @@ a:hover.natScrollTop {
 
 .ccb {
   background-image: url(https://wiki.flatironinstitute.org/pub/ComputationalCenters/CCB/WebPreferences/ccb-square.png);
-  background-color:#f5f9f1;
+  background-color: #f5f9f1;
   border-color: var(--ccb);
   color: #557231;
 }
@@ -1839,27 +1873,27 @@ a:hover.natScrollTop {
 }
 
 .ccm a:hover {
-  color: #D76609;
+  color: #d76609;
 }
 
 .ccn {
   background-image: url(https://wiki.flatironinstitute.org/pub/ComputationalCenters/CCN/WebPreferences/ccn-square.png);
   background-color: #ebfbff;
   border-color: var(--ccn);
-  color: #00758F;
+  color: #00758f;
 }
 
 .ccn a {
-  color: #00758F;
+  color: #00758f;
 }
 
 .ccn a:hover {
-  color: #00A7CC;
+  color: #00a7cc;
 }
 
 .ccq {
   background-image: url(https://wiki.flatironinstitute.org/pub/ComputationalCenters/CCQ/WebPreferences/ccq-square.png);
-  background-color: #EDE6EF;
+  background-color: #ede6ef;
   border-color: var(--ccq);
   color: #684870;
 }
@@ -1872,7 +1906,11 @@ a:hover.natScrollTop {
   color: #704b68;
 }
 
-.cca, .ccb, .ccm, .ccn, .ccq {
+.cca,
+.ccb,
+.ccm,
+.ccn,
+.ccq {
   background-size: 60px 60px;
   padding-left: 6.05em;
 }
@@ -1964,34 +2002,46 @@ a:hover.natScrollTop {
 }
 
 .fiCheatsheetMessage {
-  color:rgba(250, 250, 250, 0.95);
+  color: rgba(250, 250, 250, 0.95);
   border-radius: var(--b-radius);
   font-weight: bolder;
   padding: 16px 14px 16px 3.0769em;
-  background:
-  url(../CustomFlatironIcons/circle-reminder.svg) 1em 20px / 22px 22px no-repeat,
-  var(--accent) repeat;
+  background: url(../CustomFlatironIcons/circle-reminder.svg) 1em 20px / 22px
+      22px no-repeat,
+    var(--accent) repeat;
 }
 
 .fiCheatsheetMessage > h2 {
   border-style: solid;
   border-color: var(--border);
-  color:rgba(250, 250, 250, 0.95);
-  margin-top: .5em;
+  color: rgba(250, 250, 250, 0.95);
+  margin-top: 0.5em;
 }
 
-.fiCheatsheetMessage h1, .fiCheatsheetMessage h2, .fiCheatsheetMessage h3, .fiCheatsheetMessage h4, .fiCheatsheetMessage h5, .fiCheatsheetMessage h6 {
-  color:rgba(250, 250, 250, 0.95);
+.fiCheatsheetMessage h1,
+.fiCheatsheetMessage h2,
+.fiCheatsheetMessage h3,
+.fiCheatsheetMessage h4,
+.fiCheatsheetMessage h5,
+.fiCheatsheetMessage h6 {
+  color: rgba(250, 250, 250, 0.95);
   margin-top: 0;
 }
 
-.fiCheatsheetMessage a, .fiCheatsheetMessage h1 a, .fiCheatsheetMessage h2 a, .fiCheatsheetMessage h3 a, .fiCheatsheetMessage h4 a, .fiCheatsheetMessage h5 a, .fiCheatsheetMessage h6 a {
+.fiCheatsheetMessage a,
+.fiCheatsheetMessage h1 a,
+.fiCheatsheetMessage h2 a,
+.fiCheatsheetMessage h3 a,
+.fiCheatsheetMessage h4 a,
+.fiCheatsheetMessage h5 a,
+.fiCheatsheetMessage h6 a {
   color: #fff;
   border-bottom: 1px solid #fff;
 }
 
-.fiCheatsheetMessage code, .fiCheatsheetMessage table {
-  color: #333
+.fiCheatsheetMessage code,
+.fiCheatsheetMessage table {
+  color: #333;
 }
 
 .fiCheatsheetMessage table a {
@@ -2125,10 +2175,10 @@ table.mceLayout {
   margin: 0;
 }
 
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="password"],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='password'],
 .foswikiInputField,
 select.ui-pg-selbox,
 select,
@@ -2142,11 +2192,13 @@ textarea {
   box-shadow: inset 2px 2px 4px var(--border-bg);
 }
 
-.solrSearchField, #solrSorting, .solrCheckboxContainer > input {
+.solrSearchField,
+#solrSorting,
+.solrCheckboxContainer > input {
   background-color: #ffffff !important;
 }
 
-input[type="text"].jqUIDatepicker {
+input[type='text'].jqUIDatepicker {
   border-radius: 2px 0 0 2px;
 }
 
@@ -2178,7 +2230,7 @@ input[type=password]:focus,
   border-color: var(--accent);
 }
 
-input[type="text"].jqFarbtastic {
+input[type='text'].jqFarbtastic {
   box-shadow: none;
 }
 
@@ -2447,7 +2499,7 @@ a.jqButton.jqButtonDisabled {
   width: 15px;
   height: 50%;
   position: absolute;
-  content: "";
+  content: '';
 }
 
 .blogPrev:before {
@@ -2506,7 +2558,7 @@ a.jqButton.jqButtonDisabled {
   top: 0;
   right: 0;
   background-repeat: no-repeat;
-  : cover;
+  :cover ;
   margin: 0;
 }
 
@@ -2531,7 +2583,7 @@ a.jqButton.jqButtonDisabled {
   color: #333;
 }
 
-.natLogin input[type="text"],
+.natLogin input[type='text'],
 .natLogin #username,
 .natLogin #password {
   width: 100%;
@@ -2565,7 +2617,7 @@ pre.syntaxHighlightingPlugin {
 
 .search-label {
   display: block;
-  font-size:14px;
+  font-size: 14px;
   line-height: 20px;
   color: var(--text-label);
 }
@@ -2614,7 +2666,7 @@ pre.syntaxHighlightingPlugin {
 }
 
 .search-button:hover {
-  background-color:var(--border2-bg);
+  background-color: var(--border2-bg);
 }
 
 span#search-id {
@@ -2626,7 +2678,7 @@ span#search-id {
 
 .searchBoxContainer {
   background-color: #eff6ff;
-    border-radius: 4px;
+  border-radius: 4px;
   padding: 16px 3em 16px 3em;
   background-repeat: no-repeat;
   border: 1px solid;
@@ -2669,6 +2721,9 @@ span#search-id {
 
 .Centers\/CCQ {
   border-bottom: solid 3.5px var(--ccq);
+}
+
+.scc-landings-bottom {
 }
 
 /* Media Queries */

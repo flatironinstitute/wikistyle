@@ -1,13 +1,16 @@
 # wikistyle
+
 Custom stylesheets for the foswiki FI implementation.
 
 ## TODO
+
 - Flathub page: write that content baby.
 - Create a version of TWISTY that has a preview
 - Cheatsheet: the icon is hard to recognize: maybe remove the circle around the hand and scale the whole hand to fit the entire size of the image since it is already white on dark blue?
 - Make the login window more explicit "you will be redirected to Fido then back here..."
 
 ## Done
+
 - Underline doubles
 - Footer freeze
 - Hover brightness on search tab
@@ -34,7 +37,7 @@ Custom stylesheets for the foswiki FI implementation.
 - Ul / li style http://foswiki/SCC/WebHome#chapter_scc_webhome_4 - fix the spacing and maybe increase the size? use negative space maybe expand sub items horizontally?
 - Ul / li style on landing = change color to look like info/warning box text.
 - put links to mon7 and fido pages in a user's profile page (aka template!)
-- How to have important messages on the main landing page (eg: "MPI is broken...")  class = foswikiAnnouncement 
+- How to have important messages on the main landing page (eg: "MPI is broken...") class = foswikiAnnouncement
 - foswikiWarningMessage => better color maybe dark yellow?
 - foswikiCheatsheetMessage add finger with tie icon as circle svg.
 - High-contrast skin for the syntax highlighter - get web accessibility set from A11y.
@@ -43,4 +46,5 @@ Custom stylesheets for the foswiki FI implementation.
 - Fix landing page search box to use the dark colors from the Need Help box to pop more, get rid of grayish blue.
 
 ## Punt?
+
 - ASCII support inside %CODE% see https://wiki.flatironinstitute.org/Sandbox/TestingUserForms for example
